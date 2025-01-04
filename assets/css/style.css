@@ -1,0 +1,5342 @@
+
+
+@import url("/assets/css/font.css");
+
+:root {
+  --white: #fff;
+  --light: #ada99e;
+  --primary: #cc914a;
+  --primary-dark: #ca674c;
+  --primary-light: #dbb962;
+  --primary-extraDark: #b16e1d;
+}
+body {
+  color: var(--primary);
+  font-family: "Neue Plak Regular";
+}
+.container,
+.container-fluid {
+  padding-inline: 35px;
+}
+.page-title {
+  font-size: 75px;
+  line-height: 80px;
+  font-family: "Neue Plak SemiBold";
+}
+.text-extra-bold {
+  font-family: "Neue Plak Extended Extra Black";
+}
+.btn {
+  border: none;
+  font-size: 25px;
+  padding: 0 30px;
+  cursor: pointer;
+  text-wrap: nowrap;
+  line-height: 50px;
+  border-radius: 50px;
+  background: #dbb962;
+  transition: all 0.3s ease;
+  font-family: "Neue Plak SemiBold";
+}
+.btn:hover {
+  background: #dbb962;
+  border-radius: 0 !important;
+  color: var(--white) !important;
+}
+.wellness .wellness-text p:last-child,
+.footer .copyright .copyright-text p:last-child,
+.faqs .accordion .accordion-item .accordion-body p:last-child,
+.story-hero.hero .hero-wrapper .hero-content p:last-child,
+.mission .mission-wrapper p:last-child {
+  margin: 0;
+}
+.header {
+  z-index: 999;
+  position: relative;
+  margin-bottom: 30px;
+}
+.header .navbar {
+  padding: 32px 54px 32px 39px;
+}
+.header .navbar .navbar-brand img {
+  transition: all 0.3s ease;
+}
+.header .navbar .navbar-brand .white-logo {
+  width: 243px;
+  padding: 0 7px;
+}
+.header .navbar .navbar-brand .white-logo,
+.header.show-mega-menu .navbar .navbar-brand .colored-logo {
+  display: none;
+}
+.header .navbar .navbar-nav {
+  margin-right: 28px;
+}
+.header .navbar .navbar-nav .nav-item + .nav-item {
+  margin-left: 35px;
+}
+.header .navbar .navbar-nav .nav-item.dropdown {
+  position: inherit;
+}
+.header
+  .navbar
+  .navbar-nav
+  .nav-item.dropdown
+  .nav-link.dropdown-toggle::after {
+  display: none;
+}
+.header .navbar .navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle svg {
+  margin-left: 5px;
+  transition: all 0.3s ease;
+}
+.header
+  .navbar
+  .navbar-nav
+  .nav-item.dropdown
+  .nav-link.dropdown-toggle.show
+  svg {
+  transform: rotate(-180deg);
+}
+.header .navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
+  left: 0;
+  top: 0;
+  z-index: -1;
+  border: none;
+  max-width: 100%;
+  border-radius: 0;
+  background: #dbb962;
+  padding: 150px 20px 150px;
+}
+.header .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .mega-menu-img {
+  width: 470px;
+  height: 280px;
+  object-fit: cover;
+}
+.header
+  .navbar
+  .navbar-nav
+  .nav-item.dropdown
+  .dropdown-menu
+  .mega-menu-listing-wrapper {
+  gap: 50px;
+  display: flex;
+}
+.header
+  .navbar
+  .navbar-nav
+  .nav-item.dropdown
+  .dropdown-menu
+  .mega-menu-listing-wrapper
+  .mega-menu-listing {
+  min-width: 200px;
+}
+.header
+  .navbar
+  .navbar-nav
+  .nav-item.dropdown
+  .dropdown-menu
+  .mega-menu-listing-wrapper
+  .mega-menu-listing
+  .list-itens {
+  gap: 10px;
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 35px;
+  flex-direction: column;
+}
+.header
+  .navbar
+  .navbar-nav
+  .nav-item.dropdown
+  .dropdown-menu
+  .mega-menu-listing-wrapper
+  .mega-menu-listing
+  .list-itens
+  * {
+  margin: 0;
+}
+.header
+  .navbar
+  .navbar-nav
+  .nav-item.dropdown
+  .dropdown-menu
+  .mega-menu-listing-wrapper
+  .mega-menu-listing
+  .list-itens
+  h4 {
+  font-family: "Neue Plak SemiBold";
+}
+.header
+  .navbar
+  .navbar-nav
+  .nav-item.dropdown
+  .dropdown-menu
+  .mega-menu-listing-wrapper
+  .mega-menu-listing
+  .list-itens
+  h4
+  a {
+  color: var(--white);
+  text-decoration: none;
+}
+.header .navbar .navbar-nav .nav-link {
+  padding: 0;
+  cursor: pointer;
+  font-size: 20px;
+  text-wrap: nowrap;
+  line-height: 65px;
+  color: var(--primary);
+  transition: all 0.3s ease;
+  font-family: "Neue Plak SemiBold";
+}
+.header .navbar .navbar-nav .nav-link:hover,
+.header .navbar .navbar-nav .nav-link.active,
+.header.show-mega-menu .navbar .navbar-nav .nav-link:hover,
+.header.show-mega-menu .navbar .navbar-nav .nav-link.active,
+.header
+  .navbar
+  .navbar-nav
+  .nav-item.dropdown
+  .dropdown-menu
+  .mega-menu-listing-wrapper
+  .mega-menu-listing
+  .list-itens:hover
+  * {
+  color: #f7e488;
+}
+.header .btn {
+  font-size: 18px;
+  min-width: 160px;
+  line-height: 50px;
+  transition: all 0.3s ease;
+  background: #ca674c !important;
+  font-family: "Neue Plak SemiBold";
+}
+.header.show-mega-menu .navbar .navbar-brand .white-logo {
+  display: block;
+}
+.header.show-mega-menu .navbar .navbar-nav .nav-link {
+  color: var(--white);
+}
+.header.show-mega-menu
+  .navbar
+  .navbar-nav
+  .nav-item.dropdown
+  .nav-link.dropdown-toggle
+  svg
+  path {
+  fill: var(--white);
+}
+.header.show-mega-menu .btn {
+  color: #ca674c !important;
+  background: var(--white) !important;
+}
+.hero {
+  overflow: hidden;
+}
+.hero .hero-wrapper {
+  margin: auto;
+  max-width: 760px;
+}
+.hero .hero-wrapper .page-title {
+  font-size: 90px;
+  line-height: 80px;
+}
+.hero .hero-wrapper .hero-content {
+  padding: 58px 0 0 75px;
+}
+.hero .hero-wrapper .hero-content p {
+  font-size: 42px;
+  line-height: 50px;
+}
+.hero .hero-wrapper .hero-content .btn {
+  min-width: 350px;
+  margin-top: 50px;
+  line-height: 84px;
+  background: var(--primary-light);
+}
+.hero .hero-img {
+  gap: 33px;
+  display: flex;
+  margin-left: 20px;
+}
+.hero .hero-img .img-item {
+  height: 100%;
+  width: 65.67%;
+  flex-shrink: 0;
+}
+.hero-img .img-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 285px;
+}
+.coaching {
+  padding-block: 150px;
+}
+.coaching .page-title {
+  margin: auto;
+  max-width: 735px;
+  text-align: left;
+}
+.coaching .page-title span {
+  display: block;
+  text-align: end;
+}
+.coaching.coaching-home-program .page-title {
+  max-width: 900px;
+}
+.coaching .coaching-grid {
+  max-width: 1720px;
+  margin: 100px auto 0;
+}
+.coaching .coaching-grid h5 {
+  margin: 40px 0 15px;
+  font-family: "Neue Plak SemiBold";
+}
+.coaching .coaching-grid h3 a {
+  margin: 0;
+  font-size: 35px;
+  line-height: 45px;
+  color: var(--primary);
+  text-decoration: none;
+  font-family: "Neue Plak SemiBold";
+}
+.coaching .coaching-grid h3 a:hover {
+  color: #d47c38;
+}
+.coaching .coaching-grid .btn {
+  min-width: 250px;
+  margin-top: 35px;
+  line-height: 70px;
+  background: #dbb962;
+}
+.theme-tabs #tabcontainer {
+  margin: 40px 0;
+}
+.theme-tabs #tabcontainer img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.theme-tabs .theme-navtabs {
+  padding: 0;
+  margin: 0 0 25px;
+  list-style: none;
+  border-radius: 50px;
+  display: inline-flex;
+  justify-content: center;
+  box-shadow: inset 0 0 0 2px #d5ad99;
+}
+.theme-tabs .theme-navtabs li a,
+.theme-tabs .theme-navtabs .nav-link {
+  cursor: pointer;
+  padding: 0 20px;
+  color: #d5ad99;
+  text-wrap: nowrap;
+  line-height: 32px;
+  border-radius: 50px;
+  display: inline-flex;
+  border: 2px solid transparent;
+  font-family: "Neue Plak SemiBold";
+}
+.theme-tabs .theme-navtabs li.active a,
+.theme-tabs .theme-navtabs .nav-link.active {
+  color: #ba7d5d;
+  border: 2px solid #ba7d5d;
+}
+.theme-tabs .tabs h4 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-family: "Neue Plak SemiBold";
+}
+.theme-tabs .tabs .btn {
+  font-size: 18px;
+  min-width: 130px;
+  line-height: 50px;
+  background: #dbb962;
+}
+.theme-tabs .tab-content .tab-title {
+  margin: 0;
+  gap: 15px;
+  display: flex;
+  font-size: 130px;
+  color: #ca674c;
+  line-height: 130px;
+  justify-content: center;
+  font-family: "Neue Plak SemiBold";
+}
+.theme-tabs .tab-content .tab-title span {
+  font-size: 40px;
+  color: #ba7d5d;
+  line-height: 85px;
+  font-family: "Neue Plak Regular";
+}
+.theme-tabs .tab-content .tab-duration {
+  margin: 30px 0;
+  font-size: 24px;
+  color: #ba7d5d;
+  line-height: 65px;
+}
+.theme-tabs .tab-content .btn {
+  min-width: 450px;
+  line-height: 70px;
+  background: #ca674c;
+}
+.wellness {
+  padding: 140px 0 180px;
+  background: #f8f7ef;
+}
+.wellness .container-fluid {
+  max-width: 1100px;
+}
+.wellness .wellness-text {
+  padding: 50px 0 0 75px;
+}
+.wellness .wellness-text p {
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 40px;
+}
+.our-programs {
+  background: #edbf4a;
+  padding-block: 130px 160px;
+}
+.our-programs .programs-text .page-title {
+  font-size: 90px;
+  line-height: 95px;
+}
+.our-programs .programs-text p {
+  font-size: 40px;
+  color: #fff4d1;
+  line-height: 60px;
+}
+.our-programs .program-swiper {
+  margin: 130px -20px 90px;
+}
+.our-programs .program-swiper.home-swiper {
+  margin-bottom: 0;
+}
+.our-programs .program-swiper.home-swiper .swiper-slide .our-programs-obstacle {
+  margin-top: 90px;
+}
+.our-programs .program-swiper .swiper-slide {
+  max-width: 1325px;
+}
+.our-programs .program-swiper .swiper-slide img {
+  width: 85%;
+  max-height: 680px;
+  object-fit: cover;
+}
+.our-programs .program-swiper .swiper-arrows::after {
+  display: none;
+}
+.our-programs .swiper-arrows-wrapper {
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  width: 1240px;
+  display: flex;
+  position: absolute;
+  margin-left: -620px;
+  justify-content: space-between;
+}
+.our-programs .program-swiper.home-swiper .swiper-arrows-wrapper {
+  top: 340px;
+}
+.our-programs .swiper-arrows-wrapper .swiper-arrows {
+  position: inherit;
+}
+.our-programs .program-swiper .swiper-button-prev {
+  left: 0;
+}
+.our-programs .program-swiper .swiper-button-prev:hover svg path,
+.our-programs .program-swiper .swiper-button-next:hover svg path {
+  fill: var(--white);
+}
+.our-programs .program-swiper .swiper-button-next {
+  right: 0;
+}
+.our-programs .our-programs-obstacle {
+  margin: auto;
+  max-width: 830px;
+}
+.our-programs .our-programs-obstacle .page-title {
+  font-size: 60px;
+}
+.our-programs .our-programs-obstacle p {
+  font-size: 30px;
+  line-height: 40px;
+}
+.our-programs .our-programs-obstacle .btn {
+  min-width: 235px;
+  margin-top: 45px;
+  line-height: 80px;
+  background: var(--white);
+  color: #dbb962 !important;
+}
+.champion {
+  padding-block: 140px 325px;
+}
+.champion .champion-text {
+  margin: auto;
+  max-width: 820px;
+}
+.champion .champion-text .page-title {
+  margin-bottom: 55px;
+}
+.champion .champion-text p {
+  margin: 0;
+  font-size: 30px;
+  line-height: 40px;
+}
+.champion .champion-gallery {
+  gap: 70px;
+  display: flex;
+  justify-content: center;
+}
+.champion .champion-gallery:nth-of-type(1) {
+  margin-top: 150px;
+}
+.champion .champion-gallery .gallery-item {
+  width: 268px;
+  height: 548px;
+  overflow: hidden;
+  margin-top: -192px;
+  border-radius: 15px;
+}
+.champion .champion-gallery:nth-of-type(1) .gallery-item {
+  margin-top: 0;
+}
+.champion .champion-gallery .gallery-item:nth-child(even) {
+  margin-top: 70px;
+}
+.champion .champion-gallery:nth-of-type(1) .gallery-item:nth-child(even) {
+  margin-top: 262px;
+}
+.champion .champion-gallery .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.champion.obstacle-champion {
+  padding-block: 150px;
+}
+.champion.obstacle-champion .champion-gallery .gallery-item.show-mobile {
+  display: none;
+}
+.our-clients {
+  background: #f8f7ef;
+  padding-block: 90px 135px;
+}
+.our-clients .page-title {
+  margin: auto;
+  max-width: 700px;
+}
+.members-swiper-wrapper {
+  margin: auto;
+  margin-top: 70px;
+  /* max-width: 1370px; */
+}
+.our-clients .members-swiper {
+  max-height: 740px;
+}
+.our-clients .members-swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  margin: auto 0 !important;
+}
+.our-clients .members-swiper .swiper-slide .client-text {
+  padding-left: 90px;
+}
+.our-clients .members-swiper .swiper-slide .client-text h5 {
+  font-size: 22px;
+  line-height: 65px;
+  font-family: "Neue Plak SemiBold";
+}
+.our-clients .members-swiper .swiper-slide .client-text p {
+  margin: 0 !important;
+  font-size: 22px;
+  line-height: 36px;
+}
+.our-clients .members-swiper .swiper-slide .client-text p + p {
+  margin-top: 30px !important;
+}
+.our-clients .client-video {
+  width: 575px;
+  height: 735px;
+}
+.our-clients .client-video iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 281px;
+}
+.our-clients .members-swiper .swiper-pagination {
+  left: 0;
+  right: auto;
+  bottom: 25px;
+}
+.our-clients .members-swiper .swiper-pagination .swiper-pagination-bullet {
+  opacity: 1;
+  width: 16px;
+  height: 16px;
+  margin: 30px 0;
+  background: transparent;
+  border: 2px solid var(--primary);
+}
+.our-clients
+  .members-swiper
+  .swiper-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--primary);
+}
+.cta-programs {
+  padding: 140px 0;
+  text-align: center;
+}
+.cta-programs .cta-programs-text {
+  margin: auto;
+  max-width: 840px;
+}
+.cta-programs .cta-programs-text .cta-desc {
+  font-size: 30px;
+  line-height: 38px;
+  margin: 30px 10px 0;
+}
+.cta-programs .cta-programs-text .btn {
+  min-width: 370px;
+  margin-top: 50px;
+  line-height: 90px;
+  background: var(--primary-light);
+}
+.newsletter {
+  padding-block: 120px 135px;
+  background: var(--primary-light);
+}
+.newsletter .container-fluid {
+  max-width: 1525px;
+}
+.newsletter .newsletter-text {
+  max-width: 390px;
+  color: var(--white);
+}
+.newsletter .newsletter-text .page-title {
+  margin-bottom: 30px;
+}
+.newsletter .newsletter-text p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 28px;
+}
+.newsletter .newsletter-form {
+  margin-top: 145px;
+}
+.newsletter .newsletter-form .form-wrapper {
+  margin-bottom: 15px;
+}
+.newsletter .newsletter-form .form-wrapper .form-control {
+  height: 79px;
+  border: none;
+  font-size: 24px;
+  padding: 0 57px;
+  color: #d4b9a4;
+  border-radius: 50px;
+}
+.newsletter .newsletter-form .form-wrapper .form-control:focus {
+  box-shadow: none;
+}
+.newsletter .newsletter-form .form-wrapper .form-control::placeholder {
+  color: #d4b9a4;
+}
+.newsletter-form .btn {
+  display: flex;
+  margin-top: 38px;
+  min-width: 224px;
+  line-height: 62px;
+  margin-inline: auto;
+  align-items: center;
+  justify-content: center;
+  color: #bf8020 !important;
+  background: #f7e488 !important;
+}
+.footer {
+  padding: 90px 0;
+}
+.footer .container-fluid {
+  max-width: 1720px;
+}
+.footer .footer-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1.44;
+}
+.footer .footer-links li a {
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--primary);
+  text-decoration: none;
+  font-family: "Neue Plak SemiBold";
+}
+.footer .footer-links li a:hover {
+  color: var(--primary-extraDark);
+}
+.footer .copyright {
+  margin-top: 60px;
+}
+.footer .copyright .footer-logo {
+  display: flex;
+  align-items: flex-end;
+}
+.footer .copyright .copyright-text {
+  max-width: 465px;
+  margin-left: auto;
+}
+.footer .copyright .copyright-text p {
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--light);
+  margin-bottom: 23px;
+}
+.guide .guide-img {
+  height: 750px;
+  object-fit: cover;
+}
+.guide .guide-form-wrapper {
+  max-width: 770px;
+}
+.guide .guide-form-wrapper .page-title {
+  font-size: 65px;
+  margin-bottom: 50px;
+}
+.theme-form .form-wrapper {
+  margin-bottom: 25px;
+}
+.theme-form .form-wrapper label {
+  font-size: 26px;
+  line-height: 55px;
+  font-family: "Neue Plak SemiBold";
+}
+.theme-form .form-wrapper .form-control {
+  height: 68px;
+  padding: 0 22px;
+  font-size: 22px;
+  border-radius: 0;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  background: var(--white) !important;
+}
+.theme-form .form-wrapper select.form-control {
+  border: none;
+  border-right: 22px solid var(--white);
+  outline: 1px solid var(--primary);
+  background: var(--white) url(http://bdtchain.com/wp-content/uploads/2024/12/arrow-icon.png) no-repeat center
+    right !important;
+}
+.theme-form .form-wrapper textarea.form-control {
+  resize: none;
+  height: 285px;
+  padding-block: 20px;
+}
+.theme-form .form-wrapper .form-control::placeholder {
+  color: var(--primary);
+}
+.theme-form .form-wrapper .form-control:focus {
+  box-shadow: none;
+}
+.theme-form .btn {
+  height: 58px;
+  min-width: 321px;
+  margin-top: 55px;
+  background: var(--primary) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.faqs,
+.contact-us,
+.guide {
+  padding: 60px 0 150px;
+}
+.faqs .container-fluid {
+  max-width: 1600px;
+}
+.faqs .page-title {
+  margin-bottom: 100px;
+}
+.faqs .accordion .accordion-item {
+  border: none;
+  border-radius: 0;
+  border-top: 1px solid var(--primary);
+}
+.faqs .accordion .accordion-item .accordion-header .accordion-button {
+  gap: 15px;
+  padding: 24px 0;
+  font-size: 40px;
+  box-shadow: none;
+  align-items: flex-start;
+  color: var(--primary);
+  font-family: "Neue Plak SemiBold";
+  background: transparent !important;
+}
+.faqs .accordion .accordion-item .accordion-header .accordion-button::after,
+.packages .accordion .accordion-item .accordion-header .accordion-button::after,
+.membership-tabs
+  .tab-pane
+  .member-plan-support
+  .member-plan
+  .accordion-collapse.show
+  + .accordion-header
+  .hide-btn.accordion-button::after,
+.membership-tabs
+  .tab-pane
+  .member-plan-support
+  .member-plan
+  .accordion-collapse
+  + .accordion-header
+  .show-btn.accordion-button::after {
+  margin-top: 10px;
+  background-image: url(http://bdtchain.com/wp-content/uploads/2024/12/arrow-icon.png);
+}
+.faqs .accordion .accordion-item .accordion-body {
+  max-width: 1180px;
+  color: var(--primary);
+  padding: 40px 0 150px;
+}
+.faqs .accordion .accordion-item .accordion-body h1,
+.faqs .accordion .accordion-item .accordion-body h2,
+.faqs .accordion .accordion-item .accordion-body h3,
+.faqs .accordion .accordion-item .accordion-body h5,
+.faqs .accordion .accordion-item .accordion-body h5,
+.faqs .accordion .accordion-item .accordion-body h6 {
+  font-size: 45px;
+}
+.faqs .accordion .accordion-item .accordion-body p,
+.faqs .accordion .accordion-item .accordion-body ul {
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+.faqs .accordion .accordion-item .accordion-body .btn {
+  min-width: 370px;
+  line-height: 90px;
+}
+.program-faq.faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button {
+  gap: 15px;
+  font-size: 30px;
+  font-family: "Neue Plak Regular";
+}
+.program-faq.faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button::after {
+  margin-top: 8px;
+  background-image: url(http://bdtchain.com/wp-content/uploads/2024/12/arrow-right.svg);
+  background-size: contain;
+}
+.program-faq.faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  margin-top: 13px;
+  border-radius: 100%;
+  background: var(--primary);
+}
+.program-faq.faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button[data-bs-target="#collapseOne"]::before {
+  background: #be644b;
+}
+.program-faq.faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button[data-bs-target="#collapseTwo"]::before {
+  background: #dbb962;
+}
+.program-faq.faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button[data-bs-target="#collapseThree"]::before {
+  background: #f28269;
+}
+.program-faq.faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button[data-bs-target="#collapseFour"]::before {
+  background: #ed3d2e;
+}
+.program-faq.faqs .accordion .accordion-item .accordion-body .btn {
+  margin-top: 40px;
+}
+.client-says {
+  padding: 135px 0;
+  background: #ecd5bf;
+}
+.client-says .page-title {
+  margin: auto;
+  max-width: 740px;
+  color: #c08769;
+  text-align: center;
+}
+.client-swiper .swiper-wrapper {
+  padding: 100px 0 180px;
+}
+.client-swiper .client-quotes-wrapper {
+  gap: 100px;
+  margin: auto;
+  display: flex;
+  font-size: 30px;
+  line-height: 40px;
+  max-width: 1350px;
+  align-items: center;
+}
+.client-swiper .client-quotes-wrapper img {
+  width: 550px;
+  height: 700px;
+  border-radius: 15px;
+}
+.client-swiper .client-quotes-wrapper .client-quotes {
+  max-width: 715px;
+  color: #ba7d5d;
+}
+.client-swiper .client-quotes-wrapper .client-quotes h4 {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-family: "Neue Plak SemiBold";
+}
+.client-swiper .swiper-arrows-wrapper {
+  width: 100%;
+  bottom: 15px;
+  position: absolute;
+}
+.client-swiper .swiper-arrows-wrapper .swiper-arrows:after {
+  display: none;
+}
+.client-swiper .swiper-pagination {
+  left: 50%;
+  width: auto;
+  font-size: 32px;
+  color: #ba7d5d;
+  line-height: 36px;
+  transform: translateX(-50%);
+}
+.contact-us .guide-form-wrapper {
+  margin: auto;
+  max-width: 840px;
+}
+.contact-us .guide-form-wrapper .page-title {
+  margin-bottom: 50px;
+}
+.contact-us .guide-form-wrapper p {
+  font-size: 30px;
+  line-height: 46px;
+  margin-bottom: 90px;
+}
+.contact-us .guide-form-wrapper .theme-form {
+  padding: 0 50px;
+}
+.lets-chat {
+  background: #dbb962;
+  padding: 150px 0 200px;
+}
+.lets-chat .lets-chat-inner {
+  gap: 75px;
+  margin: auto;
+  display: flex;
+  color: #f7f6f2;
+  max-width: 1520px;
+  align-items: center;
+  justify-content: space-between;
+}
+.lets-chat .lets-chat-inner h2 {
+  flex-shrink: 0;
+  font-size: 115px;
+}
+.lets-chat .lets-chat-inner p {
+  margin: 0;
+  font-size: 30px;
+  max-width: 600px;
+  line-height: 36px;
+}
+.lets-chat .lets-chat-inner .btn {
+  font-size: 25px;
+  color: #f7f6f2;
+  min-width: 205px;
+  line-height: 65px;
+  background: transparent !important;
+  border: 2px solid #f7f6f2 !important;
+}
+.story-hero.hero {
+  padding: 60px 0 115px;
+}
+.story-hero.hero .hero-wrapper .hero-content p {
+  font-size: 30px;
+  max-width: 500px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+.story-hero.hero .hero-wrapper .hero-content {
+  max-width: 700px;
+  padding: 100px 0 0 75px;
+}
+.story-hero.hero .story-img {
+  height: 757px;
+  margin-top: 50px;
+  object-fit: cover;
+  object-position: left;
+}
+.support-story.coaching {
+  padding: 250px 0;
+  background: #f8f7ef;
+}
+.coaching.support-story .page-title {
+  max-width: 1110px;
+}
+.coaching.support-story .page-title span {
+  padding-right: 80px;
+}
+.mission {
+  padding: 90px 0 150px;
+}
+.mission .container-fluid {
+  margin: auto;
+  max-width: 1725px;
+}
+.mission .mission-wrapper {
+  max-width: 1160px;
+  margin: 110px auto 0;
+}
+.mission .mission-wrapper .page-title {
+  margin-bottom: 50px;
+}
+.mission .mission-wrapper p {
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 35px;
+}
+.mission-gallery .gallery-item {
+  height: 800px;
+}
+.mission-gallery {
+  gap: 2%;
+  display: flex;
+}
+.mission-gallery .gallery-item.left {
+  width: 36%;
+  flex-shrink: 0;
+}
+.mission-gallery .gallery-item.right {
+  width: 62%;
+}
+.mission-gallery .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mission .mission-swiper {
+  margin-top: 150px;
+  padding-bottom: 100px;
+}
+.mission .mission-swiper .swiper-slide img {
+  width: 855px;
+  height: 635px;
+  object-fit: cover;
+}
+.mission .mission-swiper .swiper-arrows-wrapper .swiper-arrows::after {
+  display: none;
+}
+.mission .mission-swiper .swiper-arrows-wrapper {
+  left: 50%;
+  bottom: 15px;
+  position: absolute;
+  width: calc(100% - 100px);
+  margin-left: calc(-50% + 50px);
+}
+.join-team {
+  color: #f7f6f2;
+  background: #dbb962;
+  padding: 100px 0 200px;
+}
+.join-team .container-fluid {
+  max-width: 1550px;
+}
+.join-team .join-team-wrapper {
+  max-width: 700px;
+  margin-top: 210px;
+}
+.join-team .join-team-wrapper h3 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.join-team .join-team-wrapper .join-team-content {
+  padding-left: 70px;
+}
+.join-team .join-team-wrapper .join-team-content p {
+  font-size: 26px;
+  line-height: 34px;
+  margin-bottom: 30px;
+}
+.join-team .join-team-wrapper .join-team-content .btn {
+  min-width: 250px;
+  margin-top: 40px;
+  line-height: 60px;
+  color: #f7f6f2 !important;
+  background: transparent !important;
+  border: 2px solid #f7f6f2 !important;
+}
+.hero.retreat-hero .hero-content {
+  max-width: 600px;
+}
+.hero.retreat-hero .hero-content p {
+  font-size: 34px;
+  line-height: 44px;
+}
+.hero.retreat-hero .retreat-img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+.retreat-tagline .tagline {
+  font-size: 45px;
+  max-width: 1332px;
+  line-height: 60px;
+  margin: 140px auto;
+}
+.upcoming-retreat .upcoming-retreat-wrapper {
+  padding: 60px 110px;
+  background: #f8f7ef;
+}
+.upcoming-retreat-wrapper .retreat-notify-text {
+  font-size: 25px;
+  line-height: 45px;
+  text-transform: uppercase;
+  font-family: "Neue Plak SemiBold";
+}
+.upcoming-retreat-wrapper .retreat-date {
+  font-size: 28px;
+  line-height: 34px;
+}
+.upcoming-retreat-wrapper .retreat-title {
+  font-size: 62px;
+  line-height: 75px;
+  margin-bottom: 30px;
+}
+.upcoming-retreat-wrapper .btn {
+  font-size: 25px;
+  margin-top: 50px;
+  line-height: 65px;
+  min-width: 205px;
+  color: var(--primary) !important;
+  background: transparent !important;
+  border: 2px solid var(--primary) !important;
+}
+.upcoming-table {
+  width: 620px;
+  border: 1px solid var(--primary);
+}
+.upcoming-table thead tr th {
+  padding: 7px;
+  width: 33.333%;
+  font-size: 90px;
+  font-weight: 600;
+  text-align: center;
+  border-right: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
+}
+.upcoming-table tbody tr td {
+  padding: 7px;
+  font-size: 40px;
+  line-height: 65px;
+  text-align: center;
+}
+.retreat-grid {
+  padding: 150px 0 180px;
+}
+.retreat-grid .retreat-grid-content {
+  max-width: 550px;
+  padding-left: 40px;
+}
+.retreat-grid .retreat-grid-content h3 {
+  font-size: 85px;
+  line-height: 100px;
+  margin-bottom: 30px;
+}
+.retreat-grid .retreat-grid-content p {
+  margin: 0;
+  font-size: 28px;
+  line-height: 38px;
+  padding-left: 40px;
+}
+.retreat-grid .row:nth-child(odd) .retreat-grid-img {
+  display: flex;
+  justify-content: flex-end;
+}
+.retreat-grid .retreat-grid-img img {
+  height: 650px;
+  object-fit: cover;
+}
+.retreat-grid .row:nth-child(1) .retreat-grid-img img {
+  margin-top: 50px;
+}
+.retreat-grid .row:nth-child(2) {
+  align-items: flex-end;
+  margin-bottom: 400px;
+}
+.retreat-grid .row:nth-child(2) .retreat-grid-img img {
+  margin-top: -50px;
+}
+.retreat-grid .row:nth-child(2) .content-col {
+  display: flex;
+  margin-bottom: -90px;
+  justify-content: center;
+}
+.retreat-grid .row:nth-child(3) {
+  margin-bottom: 70px;
+}
+.retreat-grid .row:nth-child(3) .retreat-grid-content {
+  margin-top: 55px;
+}
+.retreat-grid .row:nth-child(4) {
+  align-items: flex-end;
+  margin-bottom: 200px;
+}
+.retreat-grid .row:nth-child(4) .content-col {
+  display: flex;
+  margin-bottom: 70px;
+  justify-content: center;
+}
+.retreat-grid .row:nth-child(5) {
+  margin-bottom: 85px;
+}
+.retreat-grid .row:nth-child(5) .retreat-grid-content {
+  margin-top: 85px;
+}
+.retreat-grid .row:nth-child(6) {
+  align-items: center;
+}
+.retreat-grid .row:nth-child(6) .content-col {
+  display: flex;
+  justify-content: center;
+}
+.retreat-quote {
+  padding: 270px 0;
+  background: #f7d085;
+}
+.retreat-quote .container-fluid {
+  max-width: 1380px;
+}
+.retreat-quote .quote-title {
+  font-size: 75px;
+  line-height: 90px;
+  text-align: center;
+  color: var(--white);
+}
+.retreat-inforgraphic {
+  margin-top: 190px;
+}
+.retreat-inforgraphic .container-fluid {
+  max-width: 1250px;
+}
+.retreat-detail {
+  max-width: 1460px;
+  text-align: center;
+  margin: 80px auto 0;
+}
+.retreat-detail .page-title {
+  font-size: 95px;
+  line-height: 100px;
+}
+.retreat-detail .create-date {
+  font-size: 75px;
+  line-height: 115px;
+}
+.retreat-detail .retreat-detail-gallery {
+  gap: 40px;
+  display: flex;
+  margin-top: 50px;
+  width: calc(100% - 40px);
+}
+.retreat-detail .retreat-detail-gallery img:nth-child(1) {
+  height: 700px;
+}
+.retreat-detail .retreat-detail-gallery img {
+  width: 50%;
+  object-fit: cover;
+}
+.retreat-detail .retreat-detail-gallery img:nth-child(2) {
+  height: 800px;
+  margin-top: 60px;
+}
+.retreat-detail .upcoming-table {
+  margin: auto;
+  border: none;
+  max-width: 830px;
+}
+.retreat-detail .upcoming-table thead tr th {
+  border: none;
+}
+.retreat-detail .upcoming-table tbody tr td {
+  padding: 0;
+  line-height: 20px;
+}
+.retreat-detail .btn {
+  min-width: 290px;
+  margin-top: 80px;
+  line-height: 90px;
+  background: #dbb962 !important;
+}
+.hero.retreat-detail-hero {
+  margin-top: 150px;
+}
+.hero.retreat-detail-hero .hero-wrapper .page-title {
+  font-size: 50px;
+  max-width: 450px;
+  line-height: 60px;
+}
+.hero.retreat-detail-hero .hero-wrapper .hero-content {
+  padding: 58px 65px 0;
+}
+.hero.retreat-detail-hero .hero-wrapper .hero-content p {
+  font-size: 24px;
+  line-height: 34px;
+}
+.hero.retreat-detail-hero .hero-wrapper .hero-content p + p {
+  margin-top: 35px;
+}
+.champion.retreat-champion {
+  padding-bottom: 250px;
+}
+.champion.retreat-champion .champion-gallery {
+  margin-top: -50px;
+}
+.retreat-includes .retreat-includes-wrapper {
+  background: #f8f7ef;
+  padding: 70px 40px 140px;
+}
+.retreat-includes .retreat-includes-wrapper .retreat-includes-inner {
+  margin: auto;
+  max-width: 1425px;
+}
+.retreat-includes .retreat-includes-wrapper .page-title {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.retreat-includes .retreat-includes-wrapper .includes-listing {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  list-style: none;
+  line-height: 60px;
+}
+.retreat-includes .retreat-includes-wrapper .includes-listing.right {
+  padding-left: 70px;
+}
+.retreat-includes .retreat-includes-wrapper .includes-listing.left {
+  padding-right: 50px;
+}
+.retreat-includes .retreat-includes-wrapper .includes-listing li + li {
+  margin-top: 30px;
+}
+.retreat-hover-img .hoverable-list {
+  padding: 0;
+  list-style: none;
+  max-width: 760px;
+  margin: 170px auto 0;
+}
+.retreat-hover-img .hoverable-list li {
+  opacity: 0.5;
+  cursor: pointer;
+  font-size: 60px;
+  color: #ba7d5d;
+  line-height: 95px;
+  font-family: "Neue Plak SemiBold";
+}
+.retreat-hover-img .hoverable-list li.active {
+  opacity: 1;
+}
+.retreat-hover-img .program-kinds-preview {
+  width: 760px;
+  height: 900px;
+  object-fit: cover;
+  margin: -20px 100px 0 0;
+}
+.packages {
+  margin-top: 100px;
+  padding: 100px 0 150px;
+  background: #f7d085;
+}
+.packages .container-fluid {
+  max-width: 1480px;
+}
+.packages h3 {
+  font-size: 60px;
+  margin: 100px 0 50px;
+}
+.packages .package-detail h5 {
+  font-size: 35px;
+  line-height: 50px;
+  color: var(--primary);
+}
+.packages .package-detail + .package-detail {
+  margin-top: 90px;
+}
+.packages .package-detail .btn {
+  font-size: 20px;
+  min-width: 230px;
+  margin-top: 30px;
+  line-height: 65px;
+  color: var(--primary) !important;
+  background: transparent !important;
+  border: 2px solid var(--primary) !important;
+}
+.hero.event-hero {
+  margin-top: 70px;
+}
+.hero.event-hero .hero-wrapper .page-title {
+  font-size: 75px;
+  max-width: 500px;
+  line-height: 80px;
+}
+.hero.event-hero .hero-wrapper {
+  margin: 30px 50px 0;
+}
+.hero.event-hero .hero-wrapper .hero-content p {
+  font-size: 34px;
+  line-height: 45px;
+}
+.hero.event-hero .hero-wrapper .hero-content .btn {
+  min-width: 250px;
+  margin-top: 40px;
+  line-height: 70px;
+}
+.hero.event-hero .hero-img {
+  margin-left: 0;
+  margin-top: 50px;
+}
+.hero.event-hero .hero-img .img-item {
+  width: 543px;
+  height: 690px;
+}
+.hero.event-hero .hero-img .img-item:nth-child(2) {
+  width: 525px;
+  height: 665px;
+  margin-top: 165px;
+}
+.event-gallery {
+  margin: 100px 0 160px;
+}
+.event-gallery .container-fluid {
+  max-width: 1430px;
+}
+.event-gallery .page-title {
+  font-size: 55px;
+  max-width: 500px;
+  line-height: 70px;
+}
+.event-gallery.event-obstacle .event-gallery-item {
+  margin-top: -170px;
+}
+.event-gallery .event-gallery-text {
+  font-size: 24px;
+  max-width: 740px;
+  line-height: 38px;
+  padding: 140px 0 0 100px;
+}
+.our-programs.community-event {
+  background: #f7d085;
+}
+.our-programs.community-event .programs-text {
+  margin: auto;
+  max-width: 970px;
+  color: var(--primary);
+}
+.our-programs.community-event .programs-text .page-title {
+  font-size: 75px;
+  margin-bottom: 50px;
+}
+.our-programs.community-event .programs-text p {
+  font-size: 28px;
+  color: var(--primary);
+  line-height: 38px;
+}
+.our-programs.community-event .our-programs-obstacle .btn {
+  min-width: 295px;
+  border-radius: 50px;
+  color: var(--primary) !important;
+}
+.hero.hero-home-program {
+  margin-top: 70px;
+}
+.hero.hero-home-program .hero-wrapper {
+  margin-top: 90px;
+}
+.hero.hero-home-program .hero-wrapper .page-title {
+  max-width: 600px;
+}
+.hero.hero-home-program .hero-home-program-img {
+  height: 757px;
+  object-fit: cover;
+}
+.programs-listing .container-fluid {
+  max-width: 1485px;
+}
+.programs-listing .row {
+  align-items: center;
+  margin-bottom: 200px;
+}
+.programs-listing .programs-listing-content {
+  max-width: 630px;
+}
+.programs-listing .programs-listing-content h3 {
+  font-size: 55px;
+  line-height: 70px;
+  margin-bottom: 30px;
+}
+.programs-listing .programs-listing-content p {
+  font-size: 26px;
+  line-height: 34px;
+  margin-bottom: 30px;
+}
+.programs-listing .programs-listing-content .btn {
+  background: #dbb962 !important;
+}
+.programs-listing .programs-listing-img {
+  width: 562px;
+  height: 688px;
+  object-fit: cover;
+}
+.programs-thumb-slider {
+  background: #dbb962;
+}
+.programs-thumb-slider .coaching,
+.home-program-swiper {
+  padding: 100px 0;
+}
+.home-program-swiper .swiper-slide .home-program-img {
+  width: 510px;
+  height: 510px;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
+.home-program-swiper .swiper-slide .home-program-content {
+  font-size: 34px;
+  line-height: 48px;
+}
+.home-program-swiper .swiper-arrows-wrapper {
+  left: 50%;
+  width: 300px;
+  bottom: 15px;
+  position: absolute;
+  margin-left: -150px;
+}
+.home-program-swiper .swiper-arrows-wrapper .swiper-arrows:after {
+  display: none;
+}
+.program-video {
+  padding: 150px 0;
+}
+.program-video .page-title {
+  max-width: 740px;
+  margin: 0 auto 100px;
+}
+.program-video .video-wrapper {
+  margin: auto;
+  height: 625px;
+  overflow: hidden;
+  max-width: 1110px;
+  border-radius: 20px;
+}
+.program-video .video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.program-cta {
+  background: #dbb962;
+  padding: 150px 0 180px;
+}
+.program-cta.title-regular .page-title {
+  font-family: "Neue Plak Regular";
+}
+.program-cta.title-regular .page-title span {
+  font-family: "Neue Plak SemiBold";
+}
+.program-cta.bg-transparent .btn {
+  color: var(--white) !important;
+  background: var(--primary) !important;
+}
+.program-cta .container-fluid {
+  max-width: 970px;
+}
+.program-cta p {
+  font-size: 30px;
+  line-height: 38px;
+  margin: 30px 0 60px;
+}
+.program-cta .btn {
+  min-width: 390px;
+  line-height: 70px;
+  color: var(--primary) !important;
+  background: var(--white) !important;
+}
+.what-we-offer {
+  padding: 140px 0;
+  background: #f8f7ef;
+}
+.what-we-offer .headline {
+  font-size: 55px;
+  max-width: 700px;
+  line-height: 65px;
+  font-family: "Neue Plak SemiBold";
+}
+.what-we-offer .offer-listing:first-child {
+  border-top: 1px solid var(--primary);
+}
+.what-we-offer .offer-listing {
+  gap: 45px;
+  display: flex;
+  padding: 50px 0;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--primary);
+}
+.what-we-offer .row .offer-listing:nth-of-type(1) {
+  margin-top: 80px;
+  border-top: 2px solid var(--primary);
+}
+.what-we-offer .offer-listing .offer-title {
+  gap: 25px;
+  display: flex;
+  align-items: center;
+}
+.offer-listing .offer-title .tagline {
+  margin: 0;
+  font-size: 100px;
+  font-family: "Neue Plak SemiBold";
+}
+.offer-listing .offer-title .count,
+.game-experience.obstacle-game .game-experience-steps .steps .count {
+  width: 87px;
+  height: 87px;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 65px;
+  line-height: 75px;
+  border-radius: 999px;
+  color: var(--primary);
+  justify-content: center;
+  border: 1px solid var(--primary);
+}
+.offer-listing .what-we-offer-content {
+  max-width: 550px;
+  padding-right: 35px;
+}
+.what-we-offer-content p {
+  margin: 0;
+  font-size: 30px;
+  line-height: 38px;
+}
+.game-motive .container-fluid {
+  max-width: 1600px;
+}
+.game-motive .coaching {
+  padding-top: 25px;
+}
+.game-motive .coaching .page-title {
+  font-size: 60px;
+  max-width: 900px;
+  line-height: 75px;
+}
+.game-motive .coaching .page-title span:nth-of-type(1) {
+  padding-right: 85px;
+}
+.game-motive .game-motive-inforgrphic {
+  height: 620px;
+  object-fit: cover;
+}
+.game-motive .game-motive-content h3 {
+  font-size: 45px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+.game-motive .game-motive-content p {
+  font-size: 28px;
+  line-height: 34px;
+}
+.team-work {
+  padding: 130px 0;
+  margin-top: 180px;
+  background: #dbb962;
+}
+.team-work .team-work-content {
+  margin: auto;
+  font-size: 34px;
+  max-width: 920px;
+  line-height: 48px;
+}
+.game-experience {
+  padding: 150px 0;
+}
+.game-experience .page-title {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto 100px;
+}
+.game-experience .game-experience-infographic {
+  height: 620px;
+  object-fit: cover;
+}
+.game-experience .game-experience-content p {
+  font-size: 30px;
+  line-height: 40px;
+}
+.game-experience .game-experience-content p + p {
+  margin-top: 30px;
+}
+.diverse-programs .diverse-programs-inner {
+  max-width: 630px;
+}
+.diverse-programs .diverse-programs-inner .heading {
+  font-size: 75px;
+  line-height: 95px;
+}
+.diverse-programs .heading span {
+  font-family: "Neue Plak SemiBold";
+}
+.diverse-programs .diverse-programs-inner .content {
+  font-size: 34px;
+  line-height: 85px;
+}
+.diverse-programs .diverse-programs-thumbs {
+  margin-top: 30px;
+}
+.diverse-programs .diverse-programs-thumbs .program-thumb {
+  width: 100%;
+  height: 285px;
+  object-fit: cover;
+}
+.diverse-programs .diverse-programs-thumbs .program-title {
+  margin: 20px 0;
+  font-size: 40px;
+  line-height: 65px;
+  text-align: center;
+  font-family: "Neue Plak SemiBold";
+}
+.diverse-programs .diverse-programs-thumbs .program-title a {
+  color: #dbb962;
+  text-decoration: none;
+}
+.diverse-programs .diverse-programs-thumbs .program-title a:hover {
+  color: #d47c38;
+}
+.best-program {
+  padding: 200px 0;
+}
+.best-program .container-fluid {
+  max-width: 1050px;
+}
+.best-program .page-title {
+  padding-inline: 50px;
+}
+.best-program .faqs h4 {
+  margin: 20px 0;
+  font-size: 45px;
+  line-height: 85px;
+}
+.program-kinds.yellow {
+  background: #edbf4a;
+}
+.program-kinds.brown {
+  background: #c5664c;
+}
+.program-kinds.white * {
+  color: #f28269 !important;
+}
+.program-kinds.white .program-kinds-content .btn {
+  color: var(--white) !important;
+  background: #f28269 !important;
+}
+.program-kinds.dark-brown {
+  background: #df483c;
+}
+.program-kinds {
+  padding: 110px 0 160px;
+}
+.program-kinds .container-fluid {
+  max-width: 1600px;
+}
+.program-kinds .page-title {
+  color: var(--white);
+  margin-bottom: 150px;
+}
+.program-kinds .program-kinds-preview {
+  width: 485px;
+  height: 800px;
+  object-fit: cover;
+}
+.program-kinds .program-kinds-content {
+  max-width: 830px;
+  margin-top: 50px;
+}
+.program-kinds .program-kinds-content p {
+  font-size: 34px;
+  line-height: 50px;
+  color: var(--white);
+}
+.program-kinds .program-kinds-content .hoverable-list {
+  padding: 0;
+  margin: 50px 0;
+  font-size: 75px;
+  list-style: none;
+  line-height: 120px;
+}
+.program-kinds .program-kinds-content .hoverable-list li {
+  opacity: 0.5;
+  cursor: pointer;
+  color: var(--white);
+  font-family: "Neue Plak SemiBold";
+}
+.program-kinds .program-kinds-content .hoverable-list li.active {
+  opacity: 1;
+}
+.program-kinds .program-kinds-content .btn {
+  min-width: 370px;
+  line-height: 80px;
+  color: var(--primary) !important;
+  background: var(--white) !important;
+}
+.hero.program-hero {
+  background: #f8f7ef;
+  padding: 110px 0 140px;
+}
+.hero.program-hero .container-fluid {
+  max-width: 1670px;
+}
+.hero.program-hero .hero-wrapper .page-title {
+  font-size: 75px;
+  line-height: 85px;
+}
+.hero.program-hero .hero-wrapper .hero-content {
+  padding-right: 150px;
+}
+.hero.program-hero .hero-wrapper .hero-content p {
+  font-size: 28px;
+  line-height: 40px;
+}
+.hero.program-hero .hero-wrapper .hero-content .btn {
+  color: #cc914a !important;
+  background: transparent !important;
+  border: 2px solid #cc914a !important;
+}
+.hero.program-hero .program-img {
+  width: 640px;
+  height: 590px;
+  object-fit: cover;
+}
+.hero.program-hero.bia-mama-hero .program-img {
+  width: 556px;
+  height: 734px;
+  border-radius: 320px;
+}
+.cta-programs .cta-programs-text .page-title {
+  font-size: 65px;
+  line-height: 80px;
+}
+.cta-programs .cta-programs-text .page-title span {
+  font-family: "Neue Plak Regular";
+}
+.cta-programs.warrior-cta .cta-programs-text {
+  max-width: 950px;
+}
+.cta-programs.warrior-cta .btn {
+  min-width: 440px;
+}
+.book-consultation {
+  background: #f8f7ef;
+  padding: 150px 0 200px;
+}
+.book-consultation .page-title {
+  font-size: 85px;
+  color: #ca674c;
+  line-height: 90px;
+}
+.book-consultation .book-text {
+  font-size: 26px;
+  color: #ca674c;
+  margin: 30px 0 0;
+  line-height: 65px;
+}
+.schedule {
+  color: var(--white);
+  background: #c5664c;
+  padding: 110px 0 120px;
+}
+.schedule .page-title {
+  font-size: 85px;
+  line-height: 90px;
+}
+.schedule .timings-outer {
+  max-width: 550px;
+}
+.schedule .timings-outer .timings h3 {
+  font-size: 60px;
+  line-height: 80px;
+  margin-bottom: 40px;
+}
+.schedule .timings-outer .schedule-text {
+  font-size: 26px;
+  line-height: 35px;
+}
+.schedule .schedule-listing {
+  padding: 0;
+  font-size: 45px;
+  list-style: none;
+  margin: 150px 0 0;
+  line-height: 80px;
+}
+.schedule .btn {
+  margin-top: 50px;
+  min-width: 330px;
+  line-height: 70px;
+  color: #deb5a0 !important;
+  background: var(--white) !important;
+}
+.seasoned-athlete .page-title,
+.coaching.real-change .page-title {
+  font-size: 55px;
+  max-width: 850px;
+  line-height: 70px;
+  margin-bottom: 150px;
+}
+.coaching.real-change.warrior-change .page-title {
+  max-width: 620px;
+}
+.coaching.seasoned-athlete .page-title {
+  max-width: 985px;
+}
+.coaching.real-change.seasoned-athlete .page-title span:nth-of-type(1) {
+  padding-right: 60px;
+}
+.coaching.seasoned-athlete .page-title span:nth-of-type(1) {
+  padding-right: 100px;
+}
+.seasoned-athlete .seasoned-athlete-img {
+  width: 730px;
+  height: 558px;
+  object-fit: cover;
+}
+.seasoned-athlete .seasoned-athlete-text {
+  margin: 0;
+  font-size: 36px;
+  max-width: 650px;
+  line-height: 48px;
+}
+.seasoned-athlete.prefered-program .program-content-wrapper {
+  max-width: 640px;
+}
+.seasoned-athlete.prefered-program h3 {
+  font-size: 55px;
+  line-height: 70px;
+  margin-bottom: 30px;
+}
+.seasoned-athlete.prefered-program p {
+  font-size: 26px;
+  line-height: 34px;
+  margin-bottom: 30px;
+}
+.seasoned-athlete.prefered-program .btn {
+  min-width: 400px;
+  margin-top: 30px;
+  line-height: 70px;
+  background: #cc914a;
+}
+.program-listing {
+  padding: 150px 0;
+}
+.program-listing .container-fluid {
+  max-width: 1570px;
+}
+.program-listing .program-listing-text {
+  max-width: 400px;
+  margin-bottom: 60px;
+}
+.program-listing .program-listing-text h3 {
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 20px;
+  font-family: "Neue Plak SemiBold";
+}
+.program-listing .program-listing-text p {
+  margin: 0;
+  font-size: 22px;
+  line-height: 32px;
+}
+.hero.hero-program .hero-wrapper {
+  margin-top: 85px;
+}
+.hero.hero-program .hero-wrapper .hero-content {
+  padding-right: 80px;
+}
+.hero.hero-program .hero-program-img {
+  width: 808px;
+  height: 757px;
+  object-fit: cover;
+}
+.coaching.real-change .container-fluid {
+  max-width: 1650px;
+}
+.coaching.real-change .our-clients {
+  padding: 0;
+  background: transparent;
+}
+.coaching.real-change
+  .our-clients
+  .members-swiper
+  .swiper-slide
+  .client-text
+  h5 {
+  margin: 0;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+.coaching.real-change
+  .our-clients
+  .members-swiper
+  .swiper-slide
+  .client-text
+  h2 {
+  font-size: 55px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+.coaching.real-change
+  .our-clients
+  .members-swiper
+  .swiper-slide
+  .client-text
+  p {
+  margin: 0;
+  font-size: 26px;
+  line-height: 34px;
+  margin-bottom: 20px;
+}
+.coaching.real-change .our-clients .members-swiper-wrapper {
+  margin: auto;
+  /* max-width: 1370px; */
+}
+.coaching.real-change .our-clients .members-swiper .swiper-slide .client-text {
+  max-width: 580px;
+  padding: 0 0 0 30px;
+}
+.coaching.real-change .our-clients .members-swiper .swiper-pagination {
+  right: 0;
+  left: auto;
+}
+.coaching.real-change .our-clients .real-change-img {
+  width: 700px;
+  height: 700px;
+  object-fit: cover;
+}
+.desire-results {
+  padding: 110px 0;
+  background: #f7e488;
+}
+.desire-results .desire-results-inner {
+  color: var(--white);
+  padding: 90px 110px;
+  background: #dbb962;
+}
+.desire-results .desire-results-inner .desire-results-content {
+  gap: 60px;
+  display: flex;
+}
+.desire-results .desire-results-inner .desire-results-content .page-title {
+  width: calc(33.33% - 30px);
+}
+.desire-results .desire-results-inner .desire-results-img {
+  width: 465px;
+  height: 605px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.desire-results .desire-results-inner .title-end {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: -130px;
+  justify-content: flex-end;
+  width: calc(33.33% - 30px);
+}
+.desire-results .desire-results-inner .title-end span {
+  max-width: 300px;
+}
+.desire-results .desire-results-inner .btn {
+  min-width: 370px;
+  line-height: 80px;
+  margin-top: 110px;
+  border: 1px solid var(--white);
+  color: var(--white) !important;
+  background: transparent !important;
+}
+.resources {
+  background: #f8f7ef;
+  padding: 120px 0 190px;
+}
+.resources .container-fluid {
+  max-width: 1300px;
+}
+.resources h5 {
+  font-size: 26px;
+  color: #ba7d5d;
+  line-height: 65px;
+}
+.resource-program {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.resource-program + .resource-program {
+  margin-top: 100px;
+}
+.resource-program h3 {
+  font-size: 85px;
+  color: #ca674c;
+  max-width: 675px;
+  line-height: 90px;
+  font-family: "Neue Plak SemiBold";
+}
+.resource-program .btn {
+  width: 325px;
+  flex-shrink: 0;
+  line-height: 70px;
+  color: #ba7d5d !important;
+  background: transparent !important;
+  border: 2px solid #ba7d5d !important;
+  margin-top: -40px;
+}
+.classes-detail .main-heading {
+  font-size: 90px;
+  line-height: 115px;
+  font-family: "Neue Plak SemiBold";
+}
+.classes-detail .page-title {
+  color: #dbb962;
+}
+.classes-detail .page-content {
+  font-size: 22px;
+  margin-top: 50px;
+  line-height: 30px;
+}
+.program-gallery .program-gallery-listing {
+  gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 125px;
+  justify-content: space-between;
+}
+.program-gallery .program-gallery-listing .program-about .program-about-img {
+  width: 100%;
+  object-fit: cover;
+}
+.program-gallery .program-gallery-listing .program-about {
+  margin-bottom: 200px;
+  width: calc(50% - 37px);
+}
+.program-gallery .program-gallery-listing .program-about:nth-of-type(3) {
+  margin-top: 530px;
+}
+.program-gallery .program-gallery-listing .program-about:nth-of-type(6) {
+  margin-top: -530px;
+}
+.program-gallery
+  .program-gallery-listing
+  .program-about
+  .program-about-content {
+  max-width: 740px;
+  padding: 20px 25px;
+}
+.program-gallery
+  .program-gallery-listing
+  .program-about
+  .program-about-content
+  h3 {
+  font-size: 55px;
+  line-height: 100px;
+  margin-bottom: 20px;
+  font-family: "Neue Plak SemiBold";
+}
+.program-gallery
+  .program-gallery-listing
+  .program-about
+  .program-about-content
+  p {
+  margin: 0;
+  font-size: 22px;
+  line-height: 30px;
+  padding-left: 40px;
+}
+.program-gallery
+  .program-gallery-listing
+  .program-about:nth-of-type(1)
+  .program-about-img,
+.program-gallery
+  .program-gallery-listing
+  .program-about:nth-of-type(3)
+  .program-about-img,
+.program-gallery
+  .program-gallery-listing
+  .program-about:nth-of-type(4)
+  .program-about-img {
+  height: 655px;
+}
+.program-gallery
+  .program-gallery-listing
+  .program-about:nth-of-type(5)
+  .program-about-img,
+.program-gallery
+  .program-gallery-listing
+  .program-about:nth-of-type(6)
+  .program-about-img {
+  height: 770px;
+}
+.program-gallery
+  .program-gallery-listing
+  .program-about:nth-of-type(2)
+  .program-about-img {
+  height: 940px;
+}
+.program-cta.classes-cta .page-title {
+  margin-bottom: 50px;
+}
+.program-cta.classes-cta .btn {
+  min-width: 330px;
+  color: var(--white) !important;
+  background: #cc914a !important;
+}
+.membership-guide {
+  padding: 140px 0;
+  color: #ba7d5d;
+  background: #ecd5bf;
+}
+.membership-guide .membership-guide-detail {
+  max-width: 550px;
+}
+.membership-guide .membership-guide-detail .page-title {
+  font-size: 60px;
+  line-height: 70px;
+}
+.membership-guide .membership-guide-detail:nth-of-type(2) {
+  margin: 70px auto 0;
+}
+.membership-guide .membership-guide-detail:nth-of-type(3) {
+  margin: 100px 0 0 auto;
+}
+.membership-guide .membership-guide-detail p {
+  font-size: 26px;
+  margin: 15px 0 0;
+  line-height: 42px;
+}
+.hero.obstacle-hero .container-fluid,
+.event-gallery.event-obstacle .container-fluid {
+  max-width: 1750px;
+}
+.hero.obstacle-hero .hero-wrapper {
+  max-width: 800px;
+  margin: 20px 0 -20px 40px;
+}
+.hero.obstacle-hero .obstacle-img {
+  width: 925px;
+  height: 595px;
+  object-fit: cover;
+}
+.event-gallery.event-obstacle .page-title {
+  font-size: 45px;
+  max-width: 470px;
+  line-height: 60px;
+  font-family: "Neue Plak Regular";
+}
+.event-gallery.event-obstacle .event-gallery-text {
+  margin: auto;
+  font-size: 42px;
+  max-width: 965px;
+  line-height: 55px;
+  padding: 130px 0 0 0;
+}
+.game-experience.obstacle-game .game-experience-steps {
+  gap: 30px;
+  display: flex;
+  margin-top: 130px;
+  justify-content: space-between;
+}
+.game-experience.obstacle-game .game-experience-steps .steps {
+  max-width: 470px;
+}
+.game-experience.obstacle-game .game-experience-steps .steps p {
+  font-size: 30px;
+  margin: 40px 0 0;
+  line-height: 40px;
+}
+.game-experience.obstacle-game .game-experience-content {
+  max-width: 650px;
+  padding-left: 100px;
+}
+.game-experience.obstacle-game .game-experience-content p {
+  margin: 0;
+  font-size: 40px;
+  line-height: 55px;
+}
+.game-experience.obstacle-game .game-experience-content p + p {
+  margin-top: 30px;
+}
+.game-experience.obstacle-game .game-experience-content .btn {
+  min-width: 290px;
+  line-height: 90px;
+  margin: 65px 0 -25px 0;
+  background: #cc914a !important;
+}
+.obstacle-program {
+  background: #dbb962;
+}
+.obstacle-program .page-title {
+  margin: auto;
+  max-width: 1000px;
+}
+.champion .champion-text.champion-last {
+  margin-top: 150px;
+}
+.champion .champion-text.champion-last .page-title {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+.champion .champion-text.champion-last .champion-cta {
+  gap: 15px;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+.champion .champion-text.champion-last .champion-cta .btn.btn-outline-primary {
+  color: #cc914a !important;
+  background: transparent !important;
+  border: 2px solid #cc914a !important;
+}
+.champion .champion-text.champion-last .champion-cta .btn {
+  min-width: 275px;
+  line-height: 70px;
+  background: #cc914a !important;
+}
+.membership-benefits {
+  background: #dbb962;
+  padding: 100px 0 200px;
+}
+.membership-benefits .container-fluid {
+  max-width: 1500px;
+}
+.membership-benefits .page-title.heading {
+  font-size: 30px;
+  line-height: 70px;
+  text-align: center;
+}
+.membership-benefits .benefits-listing {
+  gap: 66px;
+  display: flex;
+  margin-top: 85px;
+}
+.membership-benefits .benefits-listing:nth-child(odd) {
+  gap: 140px;
+  align-items: flex-end;
+}
+.membership-benefits .benefits-listing .page-title {
+  font-size: 90px;
+  max-width: 770px;
+  line-height: 90px;
+}
+.membership-benefits .benefits-listing:nth-child(even) p {
+  margin-top: 35px;
+  max-width: 440px;
+}
+.membership-benefits .benefits-listing:nth-child(odd) p {
+  margin-top: 50px;
+  max-width: 550px;
+}
+.membership-benefits
+  .benefits-listing:nth-child(odd)
+  .benefits-listing-content {
+  margin-bottom: -75px;
+}
+.membership-benefits .benefits-listing img {
+  width: 531px;
+  height: 558px;
+  object-fit: cover;
+  border-radius: 13px;
+}
+.membership-benefits .benefits-listing p {
+  font-size: 30px;
+}
+.cta-programs.cta-membership .btn {
+  min-width: 450px;
+}
+.cta-obstacle p {
+  font-size: 30px;
+  line-height: 38px;
+}
+.cta-obstacle .page-title {
+  margin-bottom: 50px;
+}
+.coaching.membership-tabs {
+  padding: 75px 0 0;
+}
+.coaching.membership-tabs .page-title {
+  font-size: 65px;
+  max-width: 800px;
+}
+.membership-tabs .nav-tabs {
+  border: none;
+  justify-content: center;
+}
+.membership-tabs .nav-tabs .nav-link {
+  border: none;
+  font-size: 45px;
+  color: #eacba6;
+  line-height: 135px;
+  background: transparent;
+  font-family: "Neue Plak SemiBold";
+}
+.membership-tabs .nav-tabs .nav-link:hover,
+.membership-tabs .nav-tabs .nav-link.active {
+  color: #cc914a;
+}
+.membership-tabs .tab-pane .obstacle-program-text {
+  font-size: 34px;
+  line-height: 38px;
+  text-align: center;
+  margin: 50px 0 100px;
+}
+.membership-tabs .tab-pane .member-plan {
+  height: 100%;
+  color: #ba7d5d;
+  position: relative;
+  border-radius: 15px;
+  padding: 20px 50px 60px;
+  border: 1px solid #d8d8d8;
+}
+.membership-tabs .tab-pane .member-plan .plan-title {
+  margin: 0;
+  font-size: 50px;
+  line-height: 90px;
+  font-family: "Neue Plak SemiBold";
+}
+.membership-tabs .tab-pane .member-plan .plan-price {
+  font-size: 22px;
+  line-height: 90px;
+  position: relative;
+  font-family: "Neue Plak SemiBold";
+}
+.membership-tabs .tab-pane .member-plan .plan-price .price-symbol {
+  top: 0;
+  line-height: 75px;
+  position: absolute;
+}
+.membership-tabs .tab-pane .member-plan .plan-price .price {
+  font-size: 45px;
+  line-height: 90px;
+  padding-left: 50px;
+}
+.membership-tabs .tab-pane .member-plan .btn-outline-primary {
+  font-size: 20px;
+  line-height: 65px;
+  margin: 10px 0 40px;
+  color: #ba7d5d !important;
+  background: transparent !important;
+  border: 2px solid #ba7d5d !important;
+}
+.membership-tabs .tab-pane .member-plan .plan-detail {
+  margin: 0;
+  font-size: 22px;
+  color: #cc914a;
+  line-height: 34px;
+  padding-right: 40px;
+}
+.membership-tabs .tab-pane .member-plan .best-value {
+  left: 0;
+  top: -22px;
+  font-size: 25px;
+  min-width: 185px;
+  line-height: 44px;
+  text-align: center;
+  color: var(--white);
+  position: absolute;
+  border-radius: 20px;
+  background: #e9bc4a;
+  display: inline-block;
+}
+.membership-tabs .tab-pane .member-plan-support .page-title {
+  font-size: 42px;
+  max-width: 100%;
+  color: #ba7d5d;
+  line-height: 85px;
+  padding-left: 100px;
+  margin: 35px 0 20px;
+}
+.membership-tabs .tab-pane .member-plan-support .member-plan {
+  height: inherit;
+  padding: 50px 100px 70px;
+}
+.membership-tabs .tab-pane .member-plan-support .member-plan .plan-subheading {
+  font-size: 30px;
+  line-height: 38px;
+  margin: 10px 0 40px;
+}
+.membership-tabs
+  .tab-pane
+  .member-plan-support
+  .member-plan
+  .plan-detail-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 170px;
+  margin: 50px 0;
+}
+.membership-tabs
+  .tab-pane
+  .member-plan-support
+  .member-plan
+  .plan-detail-wrapper
+  .plan-detail {
+  padding: 0;
+  color: #ba7d5d;
+  list-style: none;
+  padding: 0; /* Removes browser padding */
+  margin: 0; /* Removes browser margin */
+  max-width: calc(33.333% - 113.333px);
+  list-style-type: none !important;
+}
+.membership-tabs
+  .tab-pane
+  .member-plan-support
+  .member-plan
+  .plan-detail-wrapper
+  .plan-detail
+  li
+  + li {
+  margin-top: 40px;
+  list-style-type: none;
+  list-style-type: none !important;
+  list-style: none;
+}
+.membership-tabs .tab-pane .member-plan-support .disclaimer {
+  margin: 30px 0;
+  font-size: 20px;
+  color: #cc914a;
+  line-height: 34px;
+}
+.packages .accordion {
+  margin-top: 50px;
+}
+.packages .accordion .accordion-item {
+  border: none;
+  background: none;
+}
+.packages .accordion .accordion-item .accordion-header .accordion-button {
+  border: none;
+  font-size: 36px;
+  background: none;
+  box-shadow: none;
+  color: var(--white);
+}
+.packages .accordion .accordion-item .accordion-header .accordion-button::after,
+.membership-tabs
+  .tab-pane
+  .member-plan-support
+  .member-plan
+  .accordion-collapse.show
+  + .accordion-header
+  .hide-btn.accordion-button::after,
+.membership-tabs
+  .tab-pane
+  .member-plan-support
+  .member-plan
+  .accordion-collapse
+  + .accordion-header
+  .show-btn.accordion-button::after,
+.faqs .accordion .accordion-item .accordion-header .accordion-button::after {
+  background-position: center;
+}
+.event-coaching-swiper .swiper-slide img {
+  width: 100%;
+  height: 490px;
+  object-fit: cover;
+}
+.event-coaching-swiper .swiper-arrows-wrapper .swiper-arrows:after {
+  display: none;
+}
+.event-coaching-swiper .swiper-arrows-wrapper .swiper-arrows {
+  top: auto;
+  bottom: 100px;
+}
+.modal .modal-dialog {
+  max-width: 685px;
+  border-radius: 20px;
+  border: 1px solid #ca674c;
+}
+.modal .modal-dialog .modal-content {
+  border: none;
+  border-radius: 18px;
+  background: transparent;
+}
+.modal .modal-dialog .modal-header {
+  border: none;
+  padding: 0 30px;
+  background: #ca674c;
+}
+.modal .modal-dialog .modal-header .modal-title {
+  width: 100%;
+  font-size: 35px;
+  text-align: center;
+}
+.modal .modal-dialog .modal-header .btn-close {
+  right: 40px;
+  position: absolute;
+}
+.modal .modal-dialog .modal-header .btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+.modal .modal-dialog .modal-header * {
+  opacity: 1;
+  line-height: 80px;
+  color: var(--white);
+  filter: brightness(0) invert(1);
+  font-family: "Neue Plak SemiBold";
+}
+.modal .modal-dialog .modal-body {
+  padding: 40px 60px 80px;
+  background: var(--white);
+}
+.modal .modal-dialog .modal-body .form-detail {
+  font-size: 22px;
+  line-height: 34px;
+}
+.modal .modal-dialog .modal-body .theme-form .btn {
+  height: 58px;
+  margin-top: 35px;
+  background: #ca674c !important;
+}
+.hero.hero-program.warrior-strong-program .hero-wrapper {
+  margin: 90px 0 0 60px;
+}
+.hero.hero-program.warrior-strong-program .hero-wrapper .page-title {
+  font-size: 70px;
+}
+.hero.hero-program.warrior-strong-program .hero-wrapper .hero-content {
+  padding-block: 25px 0;
+}
+.hero.hero-program.warrior-strong-program .hero-wrapper .hero-content p {
+  font-size: 30px;
+  line-height: 40px;
+}
+.hero.hero-program.warrior-strong-program .hero-wrapper .hero-content .btn {
+  margin-top: 30px;
+}
+@media (min-width: 1400px) {
+  .container,
+  .container-fluid {
+    max-width: 1920px;
+    padding-inline: 60px;
+  }
+  .what-we-offer .container-fluid,
+  .game-experience .container-fluid,
+  .book-consultation .container-fluid,
+  .schedule .container-fluid,
+  .coaching.seasoned-athlete .container-fluid,
+  .membership-tabs .container-fluid {
+    padding-inline: 140px;
+  }
+  .upcoming-retreat .container-fluid,
+  .diverse-programs .container-fluid,
+  .program-gallery .container-fluid,
+  .retreat-grid .container-fluid,
+  .desire-results .container-fluid,
+  .retreat-includes .container-fluid {
+    padding-inline: 100px;
+  }
+}
+@media (min-width: 1199.98px) {
+  .membership-guide .membership-guide-detail:nth-of-type(1) {
+    margin: 0 auto 0 100px;
+  }
+  .membership-guide .membership-guide-detail:nth-of-type(2) {
+    margin: 90px auto 0;
+  }
+  .membership-guide .membership-guide-detail:nth-of-type(3) {
+    margin: 120px 100px 0 auto;
+  }
+}
+@media (min-width: 1630.98px) and (max-width: 1820.98px) {
+  .offer-listing .offer-title .tagline {
+    font-size: 70px;
+  }
+  .hero.event-hero .hero-wrapper .hero-content {
+    padding-inline: 0 120px;
+  }
+  .hero.event-hero .hero-img .img-item {
+    width: 443px;
+    height: 590px;
+  }
+  .hero.event-hero .hero-img .img-item:nth-child(2) {
+    width: 425px;
+    height: 565px;
+  }
+}
+@media (max-width: 1630px) {
+  .hero.story-hero .hero-wrapper .page-title {
+    font-size: 65px;
+    max-width: 550px;
+    line-height: 75px;
+  }
+  .story-hero.hero .hero-wrapper .hero-content {
+    padding: 50px 0 0 60px;
+  }
+  .story-hero.hero .story-img,
+  .hero.hero-program .hero-program-img {
+    height: 650px;
+  }
+  .hero.hero-program .hero-wrapper {
+    margin-top: 65px;
+  }
+  .hero .hero-wrapper .page-title {
+    font-size: 80px;
+  }
+  .hero.hero-program .hero-wrapper .hero-content {
+    padding-inline: 50px 0;
+  }
+  .hero .hero-wrapper .hero-content p {
+    font-size: 38px;
+  }
+  .upcoming-retreat .upcoming-retreat-wrapper {
+    padding: 60px;
+    background: #f8f7ef;
+  }
+  .upcoming-retreat-wrapper .retreat-title {
+    font-size: 55px;
+  }
+  .game-experience .game-experience-content p {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .offer-listing .offer-title .tagline {
+    font-size: 60px;
+  }
+  .our-clients .members-swiper .swiper-slide {
+    padding-inline: 0 50px;
+  }
+  .coaching.real-change
+    .our-clients
+    .members-swiper
+    .swiper-slide
+    .client-text
+    h2 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .coaching.real-change
+    .our-clients
+    .members-swiper
+    .swiper-slide
+    .client-text
+    p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .desire-results .desire-results-inner {
+    padding: 60px;
+  }
+  .desire-results .desire-results-inner .desire-results-content .page-title {
+    font-size: 55px;
+    line-height: 60px;
+  }
+  .retreat-includes .retreat-includes-wrapper .includes-listing {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .diverse-programs .diverse-programs-thumbs .program-title {
+    font-size: 32px;
+  }
+  .best-program {
+    padding: 100px 0;
+  }
+  .game-experience.obstacle-game .game-experience-content p {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .hero.event-hero .hero-wrapper .hero-content {
+    padding: 40px 70px 0 0;
+  }
+  .hero.event-hero .hero-img .img-item {
+    width: 400px;
+    height: 550px;
+  }
+  .hero.event-hero .hero-img .img-item:nth-child(2) {
+    width: 400px;
+    height: 525px;
+  }
+}
+@media (max-width: 1560px) {
+  .guide .guide-form-wrapper .page-title {
+    font-size: 56px;
+  }
+  .lets-chat .lets-chat-inner {
+    gap: 50px;
+  }
+  .lets-chat .lets-chat-inner h2 {
+    font-size: 90px;
+  }
+  .lets-chat .lets-chat-inner p {
+    font-size: 24px;
+  }
+  .lets-chat .lets-chat-inner .btn {
+    font-size: 24px;
+    min-width: 180px;
+  }
+  .support-story.coaching {
+    padding: 170px 0;
+  }
+  .hero.retreat-hero .retreat-img,
+  .hero.hero-home-program .hero-home-program-img {
+    height: 600px;
+  }
+  .home-program-swiper .swiper-slide .home-program-img {
+    width: 100%;
+    height: 310px;
+    margin-bottom: 30px;
+  }
+  .home-program-swiper .swiper-slide .home-program-content {
+    font-size: 24px;
+    line-height: 38px;
+  }
+  .hero.hero-home-program .hero-wrapper {
+    margin-top: 30px;
+  }
+  .hero.program-hero.bia-mama-hero .hero-wrapper .page-title {
+    font-size: 65px;
+  }
+  .hero.program-hero.bia-mama-hero .hero-wrapper .hero-content {
+    padding-right: 75px;
+  }
+  .hero.obstacle-hero .obstacle-img {
+    width: 725px;
+    height: 550px;
+  }
+  .membership-tabs .nav-tabs .nav-link {
+    font-size: 35px;
+  }
+  .membership-tabs .tab-pane .member-plan {
+    padding: 20px 30px 50px;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .plan-detail-wrapper {
+    gap: 40px 100px;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .plan-detail-wrapper
+    .plan-detail {
+    max-width: calc(33.333% - 67px);
+  }
+  .membership-tabs .tab-pane .member-plan .plan-detail {
+    padding-right: 0;
+  }
+  .membership-tabs .tab-pane .member-plan-support .member-plan {
+    padding: 50px 70px 70px;
+  }
+}
+@media (min-width: 1199px) and (max-width: 1699.98px) {
+  .hero.index-hero .hero-wrapper .page-title {
+    font-size: 68px;
+    line-height: 60px;
+  }
+  .hero.index-hero .hero-wrapper {
+    max-width: 700px;
+  }
+  .hero.index-hero .hero-wrapper .hero-content p {
+    font-size: 36px;
+  }
+  .hero.index-hero .hero-img {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .hero .hero-wrapper {
+    max-width: 600px;
+  }
+  .hero .hero-wrapper .page-title {
+    font-size: 60px !important;
+    line-height: 68px !important;
+  }
+  .hero .hero-wrapper .hero-content {
+    padding: 40px 0 0 55px;
+  }
+  .hero .hero-wrapper .hero-content p {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .hero.story-hero .hero-wrapper .page-title {
+    max-width: 500px;
+  }
+  .guide .guide-form-wrapper .page-title {
+    font-size: 48px;
+  }
+  .guide .guide-img,
+  .hero.hero-program .hero-program-img {
+    height: 600px;
+  }
+  .mission .mission-swiper .swiper-slide img {
+    height: 635px;
+  }
+  .champion .champion-gallery:nth-of-type(1) {
+    padding-top: 70px;
+  }
+  .champion .champion-gallery {
+    gap: 40px;
+    margin-top: 0 !important;
+  }
+  .coaching .coaching-grid h3 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .mission-gallery .gallery-item {
+    height: 750px;
+  }
+  .mission-gallery .gallery-item.left {
+    width: 40%;
+  }
+  .mission-gallery .gallery-item.right {
+    width: 58%;
+  }
+  .upcoming-retreat-wrapper .retreat-title {
+    font-size: 50px;
+  }
+  .upcoming-table thead tr th {
+    font-size: 75px;
+  }
+  .upcoming-table tbody tr td {
+    font-size: 30px;
+  }
+  .retreat-grid .retreat-grid-img img,
+  .hero.hero-home-program .hero-home-program-img {
+    height: 500px;
+  }
+  .retreat-grid .retreat-grid-content h3 {
+    font-size: 65px;
+    line-height: 85px;
+    margin-bottom: 20px;
+  }
+  .retreat-grid .retreat-grid-content p {
+    font-size: 24px;
+    padding-inline: 40px;
+  }
+  .retreat-grid .row:nth-child(2) {
+    margin-bottom: 250px;
+  }
+  .retreat-grid .row:nth-child(even) .retreat-grid-img img {
+    padding-right: 30px;
+  }
+  .retreat-grid .row:nth-child(odd) .retreat-grid-img img {
+    padding-left: 30px;
+  }
+  .retreat-quote {
+    padding: 150px 0;
+  }
+  .retreat-quote .quote-title {
+    font-size: 55px;
+    line-height: 70px;
+  }
+  .game-motive .game-motive-content h3 {
+    font-size: 50px;
+    line-height: 65px;
+  }
+  .game-motive .game-motive-content p {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .coaching.real-change {
+    padding-block: 100px;
+  }
+  .seasoned-athlete .page-title,
+  .coaching.real-change .page-title {
+    margin-bottom: 100px;
+  }
+  .desire-results .desire-results-inner .desire-results-content .page-title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .desire-results .desire-results-inner .desire-results-img {
+    height: 505px;
+  }
+  .desire-results .desire-results-inner .title-end {
+    margin-bottom: -75px;
+  }
+  .program-listing {
+    padding: 100px 0;
+  }
+  .program-listing .program-listing-text h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .hero.program-hero .hero-wrapper .hero-content {
+    padding-right: 50px;
+  }
+  .hero.program-hero.bia-mama-hero {
+    padding: 70px 0;
+  }
+  .hero.program-hero.bia-mama-hero .program-img {
+    width: 420px;
+    height: 600px;
+  }
+  .seasoned-athlete.prefered-program h3 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .program-gallery .program-gallery-listing .program-about {
+    margin-bottom: 80px;
+  }
+  .retreat-hover-img .program-kinds-preview {
+    height: 750px;
+  }
+  .retreat-hover-img .hoverable-list {
+    margin: 100px auto 0;
+  }
+  .retreat-hover-img .hoverable-list li {
+    font-size: 50px;
+    line-height: 75px;
+  }
+  .retreat-includes .retreat-includes-wrapper .includes-listing.right {
+    padding-left: 20px;
+  }
+  .retreat-includes .retreat-includes-wrapper .includes-listing.left {
+    padding-right: 40px;
+  }
+  .packages h3 {
+    font-size: 50px;
+  }
+  .packages .package-detail h5 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .packages .package-detail .btn {
+    line-height: 55px;
+  }
+  .diverse-programs,
+  .diverse-programs .diverse-programs-thumbs {
+    margin-top: 50px;
+  }
+  .diverse-programs .diverse-programs-thumbs .program-thumb {
+    height: 400px;
+  }
+  .membership-benefits .benefits-listing .page-title {
+    font-size: 75px;
+  }
+  .membership-benefits .benefits-listing:nth-child(odd) {
+    gap: 90px;
+  }
+  .game-experience.obstacle-game .game-experience-content {
+    padding-left: 50px;
+  }
+  .hero.obstacle-hero .hero-wrapper {
+    margin: inherit;
+    max-width: 650px;
+  }
+  .hero.obstacle-hero .obstacle-img {
+    width: 625px;
+    height: 500px;
+  }
+  .hero.event-hero .hero-wrapper .hero-content {
+    padding-inline: 0 30px;
+  }
+  .hero.event-hero .hero-img .img-item {
+    width: 343px;
+    height: 490px;
+  }
+  .hero.event-hero .hero-img .img-item:nth-child(2) {
+    width: 325px;
+    height: 465px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .header .navbar {
+    padding: 13px 16px;
+  }
+  .header .navbar .navbar-toggler {
+    padding: 0;
+    border: none;
+  }
+  .header .navbar .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .header .navbar .navbar-nav .nav-item + .nav-item {
+    margin-left: 0;
+  }
+  .header.mobile-menu {
+    background: #dbb962;
+  }
+  .header.mobile-menu .navbar .navbar-collapse {
+    min-height: calc(100svh - 95px);
+  }
+  .header.mobile-menu .navbar .navbar-brand img.colored-logo,
+  .header .navbar .navbar-toggler .menu-close,
+  .header.mobile-menu .navbar .navbar-toggler .menu-bar {
+    display: none;
+  }
+  .header.mobile-menu .navbar .navbar-brand .white-logo,
+  .header.mobile-menu .navbar .navbar-toggler .menu-close {
+    display: block;
+  }
+  .header.mobile-menu .navbar .navbar-nav {
+    margin-block: 40px 120px !important;
+  }
+  .header.mobile-menu .navbar .navbar-nav .nav-link {
+    padding: 0 40px;
+    font-size: 32px;
+    line-height: 55px;
+    color: var(--white);
+  }
+  .header.mobile-menu
+    .navbar
+    .navbar-nav
+    .nav-item.dropdown
+    .nav-link.dropdown-toggle
+    svg
+    path {
+    fill: var(--white);
+  }
+  .header.mobile-menu .btn {
+    margin: 0 40px 50px;
+    width: calc(100% - 80px);
+    color: #ca674c !important;
+    background: var(--white) !important;
+  }
+  .header.mobile-menu .navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
+    padding: 10px 60px 20px;
+  }
+  .header.mobile-menu
+    .navbar
+    .navbar-nav
+    .nav-item.dropdown
+    .dropdown-menu
+    .mega-menu-listing-wrapper {
+    gap: 0;
+    flex-direction: column;
+  }
+  .header.mobile-menu
+    .navbar
+    .navbar-nav
+    .nav-item.dropdown
+    .dropdown-menu
+    .mega-menu-listing-wrapper
+    .mega-menu-listing {
+    min-width: 100%;
+  }
+  .header.mobile-menu
+    .navbar
+    .navbar-nav
+    .nav-item.dropdown
+    .dropdown-menu
+    .mega-menu-listing-wrapper
+    .mega-menu-listing
+    .list-itens {
+    margin: 0;
+  }
+  .header.mobile-menu
+    .navbar
+    .navbar-nav
+    .nav-item.dropdown
+    .dropdown-menu
+    .mega-menu-listing-wrapper
+    .mega-menu-listing
+    .list-itens
+    h4 {
+    font-family: "Neue Plak SemiBold";
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .header.mobile-menu
+    .navbar
+    .navbar-nav
+    .nav-item.dropdown
+    .dropdown-menu
+    .mega-menu-listing-wrapper
+    .mega-menu-listing
+    .list-itens
+    p {
+    display: none;
+  }
+  .our-programs .program-swiper .swiper-slide img {
+    height: 400px;
+  }
+  .our-programs .program-swiper.home-swiper .swiper-arrows-wrapper {
+    top: 200px;
+  }
+  .hero.story-hero .hero-wrapper {
+    max-width: 450px;
+  }
+  .hero.story-hero .hero-wrapper .page-title {
+    font-size: 50px !important;
+    line-height: 58px !important;
+  }
+  .story-hero.hero .hero-wrapper .hero-content {
+    padding: 30px 0 0 40px;
+  }
+  .story-hero.hero .hero-wrapper .hero-content p {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+  .story-hero.hero .story-img {
+    width: 100%;
+    height: 450px;
+  }
+  .hero.retreat-hero .retreat-img,
+  .hero.hero-program .hero-program-img {
+    height: 550px;
+  }
+  .guide .guide-img {
+    height: 550px;
+  }
+  .guide .guide-form-wrapper .page-title {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+  .lets-chat {
+    padding: 100px 0;
+  }
+  .lets-chat .lets-chat-inner {
+    flex-wrap: wrap;
+  }
+  .lets-chat .lets-chat-inner h2 {
+    width: 100%;
+    font-size: 70px;
+  }
+  .mission-gallery .gallery-item {
+    height: 650px;
+  }
+  .client-swiper .client-quotes-wrapper {
+    gap: 50px;
+    font-size: 24px;
+  }
+  .client-swiper .swiper-pagination {
+    font-size: 24px;
+  }
+  .client-swiper .client-quotes-wrapper img {
+    height: 550px;
+  }
+  .our-clients .members-swiper {
+    max-height: 600px;
+  }
+  .our-clients .client-video {
+    width: 445px;
+    height: 600px;
+  }
+  .our-programs .program-swiper .swiper-slide {
+    max-width: 500px;
+  }
+  .our-programs .program-swiper {
+    margin: 40px -20px 30px;
+  }
+  .our-programs .swiper-arrows-wrapper {
+    width: 560px;
+    margin-left: -280px;
+  }
+  .our-clients {
+    padding-block: 60px 90px;
+  }
+  .retreat-tagline .tagline {
+    font-size: 34px;
+    line-height: 50px;
+    margin: 100px auto;
+  }
+  .upcoming-retreat-wrapper .btn {
+    font-size: 22px;
+    margin-top: 30px;
+    line-height: 50px;
+  }
+  .upcoming-retreat-wrapper .retreat-title {
+    line-height: 50px;
+  }
+  .retreat-grid,
+  .program-cta,
+  .program-video,
+  .coaching,
+  .game-experience {
+    padding: 100px 0;
+  }
+  .program-video .video-wrapper {
+    height: 500px;
+  }
+  .home-program-swiper .swiper-slide .home-program-img {
+    height: 450px;
+  }
+  .coaching .page-title,
+  .coaching.membership-tabs .page-title {
+    font-size: 55px;
+    max-width: 550px;
+    line-height: 65px;
+  }
+  .programs-listing .programs-listing-content h3 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .programs-listing .row {
+    margin-bottom: 100px;
+  }
+  .programs-listing .programs-listing-img {
+    height: 588px;
+  }
+  .programs-listing .programs-listing-content p {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .coaching.support-story .page-title {
+    max-width: 830px;
+  }
+  .coaching.coaching-home-program .page-title {
+    max-width: 700px;
+  }
+  .game-motive .coaching .page-title {
+    max-width: 810px;
+  }
+  .game-motive .game-motive-inforgrphic {
+    height: 520px;
+  }
+  .game-motive .game-motive-content h3 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .game-motive .game-motive-content p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .team-work {
+    padding: 100px 0;
+    margin-top: 100px;
+  }
+  .our-programs .programs-text .page-title {
+    font-size: 65px;
+    line-height: 85px;
+  }
+  .team-work .team-work-content {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .game-experience .page-title {
+    margin: 0 auto 70px;
+  }
+  .what-we-offer,
+  .champion.obstacle-champion {
+    padding: 100px 0;
+  }
+  .what-we-offer .offer-listing {
+    flex-wrap: wrap;
+  }
+  .offer-listing .what-we-offer-content {
+    padding: 0;
+    max-width: 100%;
+  }
+  .coaching.real-change .page-title {
+    max-width: 745px;
+  }
+  .coaching.real-change .our-clients .real-change-img {
+    height: 600px;
+  }
+  .coaching.real-change
+    .our-clients
+    .members-swiper
+    .swiper-slide
+    .client-text
+    h2 {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .desire-results .desire-results-inner {
+    padding: 40px;
+  }
+  .desire-results .desire-results-inner .desire-results-content {
+    gap: 30px;
+  }
+  .desire-results .desire-results-inner .desire-results-img {
+    width: 400px;
+  }
+  .coaching.seasoned-athlete .page-title {
+    font-size: 45px;
+    max-width: 850px;
+  }
+  .seasoned-athlete .seasoned-athlete-img {
+    height: 450px;
+  }
+  .seasoned-athlete .seasoned-athlete-text {
+    font-size: 30px;
+    max-width: 650px;
+  }
+  .schedule .timings-outer .timings h3 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .schedule {
+    padding: 70px 0;
+  }
+  .schedule .timings-outer {
+    margin-top: 30px;
+  }
+  .schedule .timings-outer .timings h3 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .book-consultation .page-title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .book-consultation {
+    padding: 100px 0;
+  }
+  .book-consultation .theme-tabs .tab-content .tab-title {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .book-consultation .book-text {
+    line-height: 35px;
+  }
+  .book-consultation .theme-tabs .tab-content .tab-duration {
+    margin: 10px 0;
+  }
+  .book-consultation .theme-tabs .tab-content .btn {
+    min-width: 350px;
+  }
+  .schedule .page-title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .schedule .schedule-listing {
+    font-size: 35px;
+    line-height: 60px;
+  }
+  .seasoned-athlete.prefered-program h3 {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .seasoned-athlete.prefered-program .btn {
+    margin-top: 0;
+    font-size: 24px;
+    min-width: 300px;
+    line-height: 60px;
+  }
+  .resource-program .btn {
+    width: 285px;
+    margin-top: 0;
+  }
+  .resource-program h3 {
+    font-size: 60px;
+    line-height: 80px;
+  }
+  .program-gallery
+    .program-gallery-listing
+    .program-about
+    .program-about-content
+    h3 {
+    font-size: 40px;
+    margin-bottom: 0px;
+  }
+  .hero.retreat-detail-hero {
+    margin-top: 100px;
+  }
+  .retreat-detail .retreat-detail-gallery img:nth-child(1) {
+    height: 500px;
+  }
+  .retreat-detail .retreat-detail-gallery img:nth-child(2) {
+    height: 600px;
+    margin-top: 60px;
+  }
+  .retreat-hover-img .hoverable-list {
+    margin: 50px auto 0;
+  }
+  .retreat-hover-img .hoverable-list li {
+    font-size: 30px;
+    line-height: 55px;
+  }
+  .retreat-hover-img .program-kinds-preview {
+    height: 500px;
+  }
+  .retreat-includes .retreat-includes-wrapper .includes-listing.right {
+    padding-left: 0;
+    padding-top: 25px;
+  }
+  .retreat-includes .retreat-includes-wrapper .includes-listing.left {
+    padding-right: 0;
+  }
+  .packages h3 {
+    margin: 50px 0;
+    font-size: 40px;
+  }
+  .packages .package-detail h5 {
+    font-size: 28px;
+  }
+  .program-kinds {
+    padding: 100px 0;
+  }
+  .program-kinds .page-title {
+    margin-bottom: 100px;
+  }
+  .program-kinds .program-kinds-content {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .program-kinds .program-kinds-content p {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .program-kinds .program-kinds-content .hoverable-list {
+    margin: 30px 0;
+    font-size: 45px;
+    line-height: 70px;
+  }
+  .program-kinds .program-kinds-content .btn {
+    margin-top: 20px;
+    line-height: 70px;
+  }
+  .program-kinds .program-kinds-preview {
+    height: 600px;
+  }
+  .membership-benefits .benefits-listing {
+    gap: 40px;
+    margin-top: 45px;
+  }
+  .membership-benefits .benefits-listing:nth-child(odd) {
+    gap: 40px;
+  }
+  .membership-benefits .benefits-listing .page-title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .membership-benefits .benefits-listing p {
+    font-size: 26px;
+  }
+  .membership-benefits .benefits-listing img {
+    height: 458px;
+  }
+  .membership-benefits .benefits-listing:nth-child(even) p {
+    margin: 20px 0 0;
+    max-width: 370px;
+  }
+  .membership-benefits .benefits-listing:nth-child(odd) p {
+    margin-top: 40px;
+  }
+  .hero.obstacle-hero .hero-wrapper {
+    padding-bottom: 60px;
+  }
+  .membership-tabs .nav-tabs .nav-link {
+    font-size: 30px;
+  }
+  .membership-tabs .tab-pane .member-plan {
+    padding: 20px;
+  }
+  .membership-tabs .tab-pane .member-plan .plan-title {
+    font-size: 36px;
+    line-height: 70px;
+  }
+  .membership-tabs .tab-pane .member-plan-support .page-title {
+    font-size: 36px;
+    padding-left: 70px;
+  }
+  .membership-tabs .tab-pane .obstacle-program-text {
+    margin: 0 0 70px;
+  }
+  .membership-tabs .tab-pane .member-plan .btn-outline-primary {
+    line-height: 50px;
+  }
+  .membership-tabs .tab-pane .member-plan .plan-detail {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .membership-tabs .tab-pane .member-plan-support .member-plan {
+    padding: 30px;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .plan-detail-wrapper {
+    gap: 40px 50px;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .plan-detail-wrapper
+    .plan-detail {
+    max-width: calc(33.333% - 34px);
+  }
+  .event-gallery.event-obstacle .page-title {
+    max-width: 670px;
+  }
+  .event-gallery.event-obstacle .event-gallery-item {
+    margin-top: 100px;
+  }
+  .coaching .coaching-grid .btn {
+    min-width: 160px;
+    line-height: 50px;
+    font-size: 20px;
+  }
+  .our-clients .members-swiper .swiper-slide .client-text {
+    padding-left: 30px;
+  }
+  .our-clients .members-swiper .swiper-slide .client-text p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .header.mobile-menu .btn {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+  }
+}
+@media (max-width: 991.98px) {
+  .page-title,
+  .our-programs .programs-text .page-title,
+  .our-programs .our-programs-obstacle .page-title {
+    font-size: 40px !important;
+    line-height: 50px !important;
+  }
+  .hero .hero-wrapper .page-title {
+    font-size: 45px !important;
+    line-height: 50px !important;
+  }
+  .hero .hero-wrapper {
+    padding: 60px;
+  }
+  .hero .hero-img {
+    justify-content: flex-end;
+  }
+  .hero .hero-img .img-item {
+    width: 35.4279%;
+  }
+  .hero.story-hero .hero-wrapper {
+    max-width: 100%;
+    padding-block: 0;
+  }
+  .story-hero.hero {
+    padding: 0 0 50px;
+  }
+  .hero.retreat-hero .retreat-img {
+    height: 450px;
+  }
+  .coaching .page-title {
+    max-width: 450px;
+  }
+  .faqs,
+  .contact-us,
+  .guide {
+    padding: 0px 0 70px;
+  }
+  .faqs .page-title {
+    margin-bottom: 40px;
+  }
+  .guide .guide-form-wrapper {
+    width: 100%;
+    margin-top: 35px;
+  }
+  .theme-form .btn {
+    margin-top: 30px;
+  }
+  .mission {
+    padding: 35px 0 70px;
+  }
+  .mission .mission-wrapper {
+    padding-left: 20px;
+    margin: 30px auto 0;
+  }
+  .mission .mission-wrapper .page-title {
+    margin-bottom: 20px;
+  }
+  .mission .mission-wrapper p {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+  .mission .mission-swiper .swiper-slide img {
+    width: 100%;
+    height: 264px;
+  }
+  .mission-gallery .gallery-item.left {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 30px;
+  }
+  .mission-gallery .gallery-item.right {
+    width: 108%;
+    height: 380px;
+  }
+  .mission .mission-swiper {
+    margin-top: 70px;
+    padding-bottom: 70px;
+  }
+  .upcoming-table {
+    width: 100%;
+    margin: 50px 0 20px;
+  }
+  .client-swiper .client-quotes-wrapper,
+  .mission-gallery {
+    flex-wrap: wrap;
+  }
+  .client-swiper .client-quotes-wrapper img {
+    margin: auto;
+  }
+  .support-story.coaching {
+    padding: 100px 0;
+  }
+  .coaching .coaching-grid {
+    margin: 60px auto 0;
+  }
+  .coaching .coaching-grid h5 {
+    margin: 30px 0 10px;
+  }
+  .coaching .coaching-grid h3 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .champion .champion-gallery:nth-of-type(1) .gallery-item:nth-child(even) {
+    margin-top: 0;
+  }
+  .wellness,
+  .game-experience {
+    padding: 60px 0;
+  }
+  .wellness .wellness-text {
+    padding: 30px 0 0 30px;
+  }
+  .our-programs,
+  .coaching,
+  .programs-thumb-slider .coaching,
+  .home-program-swiper {
+    padding-block: 70px;
+  }
+  .our-programs .our-programs-obstacle .btn,
+  .retreat-detail .btn {
+    line-height: 62px;
+  }
+  .champion,
+  .champion.retreat-champion {
+    padding-block: 60px;
+  }
+  .best-program {
+    padding-block: 50px;
+  }
+  .champion.retreat-champion {
+    padding-top: 0;
+  }
+  .champion .champion-text .page-title {
+    margin-bottom: 30px;
+  }
+  .champion .champion-text p,
+  .our-programs .programs-text p,
+  .our-programs .our-programs-obstacle p,
+  .wellness .wellness-text p,
+  .hero .hero-wrapper .hero-content p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .wellness .wellness-text p {
+    margin-bottom: 20px;
+  }
+  .champion .champion-gallery {
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: flex-start;
+  }
+  .champion .champion-gallery .gallery-item {
+    height: 395px;
+    width: calc(33.333% - 27px);
+  }
+  .champion .champion-gallery .gallery-item:nth-child(odd) {
+    margin-top: 160px;
+  }
+  .champion .champion-gallery .gallery-item:nth-child(even) {
+    margin-top: 0;
+  }
+  .champion .champion-gallery .gallery-item:nth-child(4) {
+    margin-top: 20px;
+  }
+  .champion .champion-gallery .gallery-item:nth-child(5) {
+    margin-top: -160px;
+  }
+  .hero .hero-wrapper .hero-content {
+    padding: 20px 0 0 45px;
+  }
+  .hero.retreat-detail-hero .hero-wrapper .hero-content {
+    padding: 20px 30px 0;
+  }
+  .our-programs .program-swiper .swiper-slide {
+    max-width: 500px;
+  }
+  .our-programs .program-swiper {
+    margin: 40px -20px 30px;
+  }
+  .our-programs .swiper-arrows-wrapper {
+    width: 560px;
+    margin-left: -280px;
+  }
+  .our-clients {
+    padding-block: 60px;
+  }
+  .our-clients .members-swiper .swiper-slide .client-text {
+    max-width: 100%;
+    padding: 0 0 80px;
+  }
+  .our-clients .members-swiper .swiper-pagination .swiper-pagination-bullet {
+    margin: 30px 15px 0;
+  }
+  .cta-programs .cta-programs-text .btn,
+  .hero .hero-wrapper .hero-content .btn {
+    line-height: 62px;
+    margin-top: 50px;
+  }
+  .hero .hero-wrapper .hero-content .btn {
+    margin-top: 25px;
+  }
+  .newsletter,
+  .cta-programs {
+    padding: 60px 0;
+  }
+  .newsletter .newsletter-text {
+    max-width: 100%;
+  }
+  .newsletter .newsletter-text .page-title {
+    margin-bottom: 10px;
+  }
+  .newsletter .newsletter-form {
+    margin-top: 50px;
+  }
+  .newsletter .newsletter-form .form-wrapper .form-control {
+    height: 60px;
+    padding: 0 30px;
+    border-radius: 50px;
+  }
+  .newsletter-form .btn {
+    min-width: 100%;
+  }
+  .newsletter .newsletter-form .form-wrapper {
+    margin-bottom: 10px;
+  }
+  .newsletter-form .btn {
+    margin-top: 20px;
+  }
+  .join-team {
+    padding: 70px 0;
+  }
+  .join-team .page-title br {
+    display: none;
+  }
+  .join-team .join-team-wrapper {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .join-team .join-team-wrapper h3 {
+    font-size: 32px;
+    padding-left: 30px;
+    margin-bottom: 42px;
+  }
+  .join-team .join-team-wrapper .join-team-content {
+    padding-left: 0;
+  }
+  .retreat-tagline .tagline {
+    margin: 70px auto;
+    padding-inline: 35px;
+  }
+  .upcoming-retreat .upcoming-retreat-wrapper {
+    padding: 30px;
+  }
+  .upcoming-table thead tr th {
+    font-size: 40px;
+  }
+  .upcoming-table tbody tr td {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .retreat-quote {
+    padding: 80px 0;
+  }
+  .retreat-quote .quote-title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .retreat-inforgraphic {
+    margin-top: 100px;
+  }
+  .retreat-grid .row:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+  .retreat-grid .row *,
+  .retreat-grid .row {
+    margin: 0 !important;
+  }
+  .retreat-grid .row + .row {
+    margin-top: 70px !important;
+  }
+  .retreat-grid .row .content-col {
+    margin-top: 30px !important;
+    justify-content: flex-start !important;
+  }
+  .retreat-grid .retreat-grid-content {
+    padding: 0;
+  }
+  .retreat-grid {
+    padding: 50px 0;
+  }
+  .retreat-grid .row .retreat-grid-img img {
+    width: 85%;
+    height: 400px;
+    padding: 0 !important;
+  }
+  .retreat-grid .retreat-grid-content h3 {
+    font-size: 45px;
+    line-height: 85px;
+  }
+  .program-video .page-title {
+    margin-bottom: 50px;
+  }
+  .hero.hero-home-program .hero-wrapper,
+  .hero.hero-home-program,
+  .hero.hero-program .hero-wrapper {
+    margin-top: 0;
+  }
+  .hero.hero-program.warrior-strong-program .hero-wrapper {
+    margin: 0 auto;
+  }
+  .hero.hero-home-program .hero-home-program-img,
+  .hero.hero-program .hero-program-img {
+    width: 100%;
+    height: 600px;
+  }
+  .programs-listing .row:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .programs-listing .programs-listing-content {
+    max-width: 100%;
+    padding: 0 30px 50px;
+  }
+  .programs-listing .programs-listing-img {
+    width: 100%;
+    height: 588px;
+  }
+  .programs-listing .row {
+    margin-bottom: 50px;
+  }
+  .programs-listing .programs-listing-content h3 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .coaching.support-story .page-title {
+    max-width: 690px;
+  }
+  .coaching.coaching-home-program .page-title {
+    max-width: 570px;
+  }
+  .game-motive .coaching {
+    padding-top: 0px;
+  }
+  .game-motive .coaching .page-title {
+    max-width: 680px;
+  }
+  .game-motive .game-motive-content {
+    padding: 35px;
+  }
+  .team-work {
+    margin-top: 20px;
+  }
+  .team-work .team-work-content {
+    font-size: 24px;
+    line-height: 34px;
+    padding: 20px 50px 0;
+  }
+  .game-experience .page-title {
+    margin: 0 auto 50px;
+  }
+  .game-experience .game-experience-content,
+  .seasoned-athlete.prefered-program .program-content-wrapper {
+    padding: 35px 35px 0;
+  }
+  .retreat-grid .retreat-grid-content,
+  .seasoned-athlete .seasoned-athlete-text,
+  .seasoned-athlete.prefered-program .program-content-wrapper {
+    max-width: 100%;
+  }
+  .retreat-grid .retreat-grid-content p {
+    padding-inline: 20px 0;
+  }
+  .coaching.real-change .page-title,
+  .coaching.real-change.warrior-change .page-title {
+    max-width: 515px;
+  }
+  .coaching.real-change .our-clients .real-change-img {
+    width: 100%;
+    height: 500px;
+  }
+  .coaching.real-change
+    .our-clients
+    .members-swiper
+    .swiper-slide
+    .client-text {
+    max-width: 100%;
+    padding: 20px 0 50px;
+  }
+  .coaching.real-change {
+    padding-block: 50px;
+  }
+  .coaching.real-change .page-title,
+  .seasoned-athlete .page-title,
+  .program-kinds .page-title {
+    margin-bottom: 50px;
+  }
+  .desire-results {
+    padding: 35px 0;
+  }
+  .desire-results .desire-results-inner .desire-results-content {
+    flex-wrap: wrap;
+  }
+  .desire-results .desire-results-inner .desire-results-content .page-title,
+  .seasoned-athlete .seasoned-athlete-img {
+    width: 100%;
+  }
+  .desire-results .desire-results-inner .desire-results-img {
+    width: 100%;
+    height: 800px;
+  }
+  .desire-results
+    .desire-results-inner
+    .desire-results-content
+    .page-title
+    span {
+    display: flex;
+    max-width: 300px;
+  }
+  .desire-results .desire-results-inner .title-end {
+    text-align: end;
+  }
+  .coaching.seasoned-athlete .page-title {
+    max-width: 710px;
+  }
+  .seasoned-athlete .seasoned-athlete-text {
+    font-size: 24px;
+    line-height: 34px;
+    padding: 35px 35px 0;
+  }
+  .book-consultation .theme-tabs {
+    margin-top: 70px;
+  }
+  .book-consultation .theme-tabs .tab-content .btn {
+    margin-top: 50px;
+  }
+  .our-clients .members-swiper .swiper-slide {
+    padding: 0;
+  }
+  .schedule .schedule-listing {
+    font-size: 25px;
+    margin: 30px 0 0;
+    line-height: 50px;
+  }
+  .resource-program {
+    flex-wrap: wrap;
+  }
+  .resource-program h3 {
+    width: 100%;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .resources,
+  .program-kinds,
+  .membership-guide {
+    padding: 100px 0;
+  }
+  .program-gallery .program-gallery-listing {
+    margin: 100px 0;
+  }
+  .program-gallery .program-gallery-listing .program-about {
+    width: 100%;
+    margin: 0 !important;
+  }
+  .program-gallery
+    .program-gallery-listing
+    .program-about
+    .program-about-content {
+    max-width: 100%;
+  }
+  .program-gallery .program-gallery-listing .program-about:nth-of-type(2),
+  .program-gallery .program-gallery-listing .program-about:nth-of-type(6) {
+    text-align: end;
+  }
+  .program-gallery .program-gallery-listing .program-about .program-about-img {
+    height: 500px !important;
+  }
+  .program-gallery
+    .program-gallery-listing
+    .program-about:nth-of-type(2)
+    .program-about-img,
+  .program-gallery
+    .program-gallery-listing
+    .program-about:nth-of-type(6)
+    .program-about-img {
+    max-width: 80%;
+  }
+  .program-gallery
+    .program-gallery-listing
+    .program-about
+    .program-about-content {
+    text-align: start;
+  }
+  .program-gallery
+    .program-gallery-listing
+    .program-about
+    .program-about-content
+    p {
+    padding-left: 20px;
+  }
+  .classes-detail .main-heading {
+    font-size: 65px;
+    line-height: 75px;
+  }
+  .classes-detail .page-content {
+    margin-top: 20px;
+  }
+  .retreat-detail .create-date {
+    font-size: 35px;
+    line-height: 85px;
+  }
+  .retreat-detail .retreat-detail-gallery img:nth-child(1) {
+    height: 500px;
+  }
+  .retreat-detail .retreat-detail-gallery img:nth-child(2) {
+    height: 600px;
+  }
+  .hero.retreat-detail-hero {
+    margin-top: 50px;
+  }
+  .retreat-hover-img .program-kinds-preview {
+    height: 420px;
+  }
+  .packages {
+    margin-top: 50px;
+    padding: 50px 0 70px;
+  }
+  .packages .package-detail + .package-detail {
+    margin-top: 40px;
+  }
+  .packages .accordion .accordion-item + .accordion-item {
+    margin-top: 20px;
+  }
+  .diverse-programs .diverse-programs-inner .heading {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .diverse-programs .diverse-programs-thumbs .program-thumb {
+    height: 300px;
+  }
+  .diverse-programs .diverse-programs-inner .content,
+  .best-program .faqs h4 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .best-program .faqs h4 {
+    margin: 20px 0;
+  }
+  .faqs .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 34px;
+  }
+  .faqs .accordion .accordion-item .accordion-body h1,
+  .faqs .accordion .accordion-item .accordion-body h2,
+  .faqs .accordion .accordion-item .accordion-body h3,
+  .faqs .accordion .accordion-item .accordion-body h5,
+  .faqs .accordion .accordion-item .accordion-body h5,
+  .faqs .accordion .accordion-item .accordion-body h6 {
+    font-size: 30px;
+  }
+  .faqs .accordion .accordion-item .accordion-body p,
+  .faqs .accordion .accordion-item .accordion-body ul {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .faqs .accordion .accordion-item .accordion-body .btn {
+    min-width: 300px;
+    line-height: 65px;
+  }
+  .program-kinds {
+    padding: 70px 0;
+  }
+  .program-kinds .program-kinds-content {
+    margin-top: 0;
+  }
+  .program-kinds .program-kinds-content .btn {
+    margin-top: 70px;
+  }
+  .hero.program-hero.hero-bottom {
+    padding: 60px 0;
+  }
+  .hero.program-hero.hero-bottom .hero-wrapper {
+    padding: 0;
+  }
+  .hero.program-hero.hero-bottom .hero-wrapper .page-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .hero.program-hero.hero-bottom .program-img {
+    height: 490px;
+  }
+  .hero.program-hero.hero-bottom .hero-wrapper .hero-content {
+    text-align: center;
+    padding: 30px 0 0 0;
+  }
+  .hero.program-hero.hero-bottom .hero-wrapper .hero-content p {
+    text-align: start;
+  }
+  .champion.obstacle-champion .champion-gallery:nth-of-type(2),
+  .champion.obstacle-champion .champion-gallery:nth-of-type(3) {
+    display: none;
+  }
+  .champion.obstacle-champion .champion-gallery .gallery-item.show-mobile {
+    margin: 0;
+    display: block;
+  }
+  .champion.obstacle-champion .champion-gallery .gallery-item:nth-child(8) {
+    margin-top: -160px;
+  }
+  .membership-benefits .benefits-listing {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  .membership-benefits .benefits-listing:nth-child(even) p,
+  .membership-benefits .benefits-listing:nth-child(odd) p {
+    max-width: 100%;
+  }
+  .membership-benefits
+    .benefits-listing:nth-child(odd)
+    .benefits-listing-content {
+    margin-top: 40px;
+    padding-left: 60px;
+  }
+  .membership-benefits .benefits-listing:nth-child(odd) p {
+    margin-top: 30px;
+  }
+  .membership-benefits .benefits-listing img {
+    width: 400px;
+    height: 458px;
+  }
+  .game-experience.obstacle-game .game-experience-content {
+    max-width: 100%;
+    padding-left: 0;
+  }
+  .game-experience.obstacle-game .game-experience-content .btn {
+    line-height: 70px;
+    margin: 30px 0 50px;
+  }
+  .game-experience.obstacle-game .game-experience-steps {
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .game-experience.obstacle-game .game-experience-content p {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .game-experience.obstacle-game .game-experience-steps .steps {
+    max-width: 100%;
+  }
+  .game-experience.obstacle-game .game-experience-steps .steps p {
+    margin-top: 10px;
+  }
+  .membership-guide .membership-guide-detail + .membership-guide-detail {
+    margin-top: 50px !important;
+  }
+  .membership-tabs .nav-tabs {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    border-radius: 50px;
+    margin: 50px 0 30px;
+    justify-content: space-between;
+    box-shadow: inset 0 0 0 2px #e3c7a5;
+  }
+  .membership-tabs .nav-tabs .nav-link {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 10px;
+    color: #e3c7a4;
+    text-wrap: nowrap;
+    line-height: 32px;
+    border-radius: 50px;
+    display: inline-flex;
+    background: transparent;
+    border: 2px solid transparent;
+    font-family: "Neue Plak SemiBold";
+  }
+  .membership-tabs .nav-tabs .nav-link.active {
+    color: var(--primary);
+    border: 2px solid var(--primary);
+  }
+  .membership-tabs .tab-pane .obstacle-program-text {
+    font-size: 28px;
+  }
+  .membership-tabs .tab-pane .member-plan {
+    padding: 35px;
+    height: inherit;
+    margin-bottom: 35px;
+  }
+  .membership-tabs .tab-pane .member-plan .plan-title,
+  .membership-tabs .tab-pane .member-plan .plan-price {
+    line-height: 50px;
+  }
+  .membership-tabs .tab-pane .member-plan .plan-detail,
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .plan-detail-wrapper
+    .plan-detail
+    li {
+    gap: 8px;
+    display: block;
+    padding: 0 10px;
+  }
+  .membership-tabs .tab-pane .member-plan .plan-detail img {
+    margin-top: 10px;
+    flex-shrink: 0;
+  }
+  .membership-tabs .tab-pane .member-plan-support .page-title {
+    padding-left: 0;
+    margin: 0 0 10px;
+  }
+  .event-gallery.event-obstacle .event-gallery-text {
+    font-size: 30px;
+    max-width: 500px;
+    line-height: 40px;
+  }
+  .event-gallery {
+    margin: 60px 0 120px;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .member-plan-detail {
+    flex-wrap: wrap;
+    gap: 0 !important;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .member-plan-detail
+    .plan-price {
+    width: 100%;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .member-plan-detail
+    .theme-tabs {
+    width: 100%;
+    margin-top: 35px;
+    align-items: flex-start !important;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .plan-detail-wrapper {
+    gap: 28px;
+    margin: 25px 0 0;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .plan-detail-wrapper
+    .plan-detail {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .plan-detail-wrapper
+    .plan-detail
+    li
+    + li {
+    margin-top: 20px;
+  }
+
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .accordion-collapse.show
+    + .accordion-header
+    .show-btn,
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .accordion-collapse
+    + .accordion-header
+    .hide-btn {
+    display: none;
+  }
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .accordion-collapse.show
+    + .accordion-header
+    .hide-btn,
+  .membership-tabs
+    .tab-pane
+    .member-plan-support
+    .member-plan
+    .accordion-collapse
+    + .accordion-header
+    .show-btn {
+    display: flex;
+    padding-inline: 0;
+    color: #cc914a;
+    font-size: 18px;
+  }
+  .event-gallery.event-obstacle .event-gallery-item,
+  .event-gallery .event-gallery-item {
+    margin-top: 50px;
+  }
+  .event-gallery.event-obstacle .event-gallery-text {
+    padding-top: 50px;
+  }
+  .event-gallery {
+    margin: 60px 0 90px;
+  }
+  .hero.event-hero .hero-wrapper .hero-content {
+    padding-inline: 0;
+  }
+  .hero.event-hero .hero-img .img-item {
+    width: 294px;
+    height: 400px;
+  }
+  .hero.event-hero .hero-img .img-item:nth-child(2) {
+    width: 294px;
+    height: 450px;
+  }
+  .hero.event-hero .hero-wrapper {
+    padding: 0;
+    max-width: 100%;
+  }
+  .our-programs
+    .program-swiper.home-swiper
+    .swiper-slide
+    .our-programs-obstacle {
+    margin-top: 40px;
+  }
+  .our-clients .members-swiper {
+    max-height: max-content;
+  }
+  .hero.program-hero.bia-mama-hero .hero-wrapper .hero-content {
+    padding-right: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero .hero-wrapper {
+    padding: 0 0 30px;
+  }
+  .hero .hero-img {
+    gap: 15px;
+    margin-right: -40px;
+  }
+  .hero .hero-img .img-item {
+    width: 193px;
+    height: 261px;
+  }
+  .hero.retreat-hero .retreat-img {
+    height: 300px;
+  }
+  .contact-us .guide-form-wrapper .page-title,
+  .program-gallery
+    .program-gallery-listing
+    .program-about
+    .program-about-content
+    h3 {
+    margin-bottom: 15px;
+  }
+  .contact-us .guide-form-wrapper p {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .contact-us .guide-form-wrapper .theme-form {
+    padding: 0;
+  }
+  .faqs .page-title {
+    margin-bottom: 50px;
+  }
+  .faqs .accordion .accordion-item .accordion-header .accordion-button {
+    padding: 12px 0;
+    font-size: 30px;
+  }
+  .faqs .accordion .accordion-item .accordion-header .accordion-button::after {
+    margin-top: 8px;
+  }
+  .program-faq.faqs
+    .accordion
+    .accordion-item
+    .accordion-header
+    .accordion-button::before {
+    margin-top: 7px;
+  }
+  .program-faq.faqs
+    .accordion
+    .accordion-item
+    .accordion-header
+    .accordion-button::after {
+    margin-top: 3px;
+    background-size: 80%;
+  }
+  .client-swiper .swiper-wrapper {
+    padding: 50px 0 80px;
+  }
+  .client-says,
+  .champion.obstacle-champion {
+    padding: 70px 0;
+  }
+  .champion.obstacle-champion .champion-text.champion-last {
+    margin-top: 70px;
+  }
+  .newsletter .newsletter-form {
+    margin: 20px 0;
+  }
+  .our-programs .program-swiper .swiper-slide {
+    max-width: 325px;
+  }
+  .our-programs .program-swiper {
+    margin: 40px -20px 30px;
+  }
+  .our-programs .swiper-arrows-wrapper {
+    width: 400px;
+    margin-left: -200px;
+  }
+  .footer {
+    padding: 40px 0;
+  }
+  .footer .footer-links {
+    margin-bottom: 45px;
+  }
+  .footer .footer-links.social {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer .footer-links.social li {
+    width: 50%;
+  }
+  .footer .footer-links.social li:nth-child(even) {
+    padding-left: calc(1.5rem * 0.5);
+  }
+  .footer .copyright {
+    margin-top: 10px;
+    flex-direction: column-reverse;
+  }
+  .footer .copyright .footer-logo {
+    margin-top: 60px;
+  }
+  .footer .copyright .footer-logo img {
+    width: 170px;
+  }
+  .footer .copyright .copyright-text {
+    max-width: 100%;
+  }
+  .retreat-tagline .tagline {
+    font-size: 24px;
+    line-height: 40px;
+    margin: 50px auto;
+  }
+  .program-video .video-wrapper {
+    height: 300px;
+  }
+  .home-program-swiper .swiper-slide .home-program-img {
+    height: 250px;
+  }
+  .hero.hero-home-program .hero-home-program-img,
+  .programs-listing .programs-listing-img,
+  .hero.hero-program .hero-program-img {
+    height: 450px;
+  }
+  .coaching.support-story .page-title,
+  .game-motive .coaching .page-title,
+  .coaching.real-change .page-title,
+  .coaching.seasoned-athlete .page-title,
+  .book-consultation .page-title,
+  .resource-program h3,
+  .program-gallery
+    .program-gallery-listing
+    .program-about
+    .program-about-content
+    h3,
+  .retreat-includes .retreat-includes-wrapper .page-title,
+  .packages .page-title {
+    font-size: 30px !important;
+    line-height: 38px !important;
+  }
+  .page-title {
+    font-size: 30px !important;
+    line-height: 38px !important;
+  }
+  .coaching.real-change .page-title,
+  .coaching.real-change.warrior-change .page-title {
+    max-width: 345px;
+  }
+  .game-motive .game-motive-inforgrphic,
+  .seasoned-athlete .seasoned-athlete-img {
+    width: 100%;
+    height: 350px;
+  }
+  .what-we-offer {
+    padding: 70px 0;
+  }
+  .what-we-offer .headline {
+    margin: 0;
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .what-we-offer .offer-listing {
+    padding: 30px 0;
+  }
+  .what-we-offer .row .offer-listing:nth-of-type(1) {
+    margin-top: 40px;
+  }
+  .what-we-offer .offer-listing .offer-title,
+  .what-we-offer .offer-listing {
+    gap: 30px;
+  }
+  .offer-listing .offer-title .tagline {
+    font-size: 40px;
+  }
+  .offer-listing .offer-title .count,
+  .game-experience.obstacle-game .game-experience-steps .steps .count {
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .what-we-offer-content p,
+  .membership-tabs .tab-pane .obstacle-program-text,
+  .hero.event-hero .hero-wrapper .hero-content p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .coaching.real-change .our-clients .real-change-img {
+    height: 370px;
+  }
+  .coaching.real-change
+    .our-clients
+    .members-swiper
+    .swiper-slide
+    .client-text
+    h2,
+  .schedule .timings-outer .timings h3 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .our-clients .members-swiper .swiper-slide .client-text h5 {
+    font-size: 18px;
+  }
+  .our-clients .members-swiper .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 30px 10px 0;
+  }
+  .desire-results
+    .desire-results-inner
+    .desire-results-content
+    .page-title
+    span {
+    max-width: 200px;
+  }
+  .desire-results .desire-results-inner .desire-results-img {
+    height: 650px;
+  }
+  .program-listing,
+  .membership-guide {
+    padding: 50px 0;
+  }
+  .program-listing .program-listing-text {
+    max-width: 100%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+  .hero.program-hero.bia-mama-hero .program-img {
+    width: 300px;
+    height: 390px;
+  }
+  .resource-program + .resource-program {
+    margin-top: 50px;
+  }
+  .program-gallery .program-gallery-listing .program-about .program-about-img {
+    height: 335px !important;
+  }
+  .program-gallery .program-gallery-listing {
+    margin: 50px 0;
+  }
+  .retreat-detail {
+    margin-top: 0;
+  }
+  .retreat-detail .create-date {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .retreat-detail .retreat-detail-gallery {
+    gap: 10px;
+    margin-top: 40px;
+    width: calc(100% - 10px);
+  }
+  .retreat-detail .retreat-detail-gallery img:nth-child(1) {
+    height: 400px;
+  }
+  .retreat-detail .retreat-detail-gallery img:nth-child(2) {
+    height: 430px;
+    margin-top: 20px;
+  }
+  .retreat-detail .btn {
+    margin-top: 40px;
+  }
+  .retreat-detail .upcoming-table {
+    margin-top: 10px;
+  }
+  .retreat-hover-img .hoverable-list {
+    gap: 40px;
+    display: flex;
+    margin: 0 -35px;
+    overflow-x: auto;
+    padding-left: 35px;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+  .retreat-hover-img .program-kinds-preview {
+    margin-top: 20px;
+  }
+  .retreat-hover-img .hoverable-list li {
+    text-wrap: nowrap;
+  }
+  .retreat-includes .retreat-includes-wrapper {
+    padding: 40px;
+  }
+  .retreat-includes .retreat-includes-wrapper .page-title {
+    margin-bottom: 40px;
+  }
+  .retreat-includes .retreat-includes-wrapper .includes-listing {
+    font-size: 20px;
+    line-height: 26.5px;
+  }
+  .faqs .accordion .accordion-item .accordion-body h1,
+  .faqs .accordion .accordion-item .accordion-body h2,
+  .faqs .accordion .accordion-item .accordion-body h3,
+  .faqs .accordion .accordion-item .accordion-body h5,
+  .faqs .accordion .accordion-item .accordion-body h5,
+  .faqs .accordion .accordion-item .accordion-body h6 {
+    font-size: 24px;
+  }
+  .diverse-programs .theme-tabs .theme-navtabs li a {
+    text-transform: capitalize;
+  }
+  .diverse-programs .theme-tabs .theme-navtabs {
+    margin-bottom: 0;
+  }
+  .program-kinds .program-kinds-preview {
+    width: 305px;
+    height: 455px;
+    margin-top: 30px;
+  }
+  .hero.program-hero.hero-bottom .program-img {
+    height: 400px;
+  }
+  .champion .champion-text.champion-last .page-title,
+  .cta-obstacle .page-title {
+    margin-bottom: 20px;
+  }
+  .champion .champion-text.champion-last .champion-cta {
+    margin-top: 30px;
+  }
+  .champion .champion-text.champion-last .champion-cta .btn {
+    min-width: 220px;
+  }
+  .cta-obstacle p {
+    margin-bottom: 0;
+  }
+  .membership-benefits {
+    padding: 50px 0 120px;
+  }
+  .game-experience.obstacle-game .game-experience-content .btn {
+    margin: 30px 0;
+  }
+  .hero.obstacle-hero .hero-wrapper {
+    padding-bottom: 40px;
+  }
+  .game-experience.obstacle-game .game-experience-infographic,
+  .hero.obstacle-hero .obstacle-img {
+    width: 100%;
+    height: 400px;
+  }
+  .membership-tabs .nav-tabs .nav-link {
+    font-size: 14px;
+  }
+  .event-gallery.event-obstacle .page-title {
+    padding: 0 30px;
+    max-width: 470px;
+  }
+  .event-gallery.event-obstacle .event-gallery-text,
+  .event-gallery .event-gallery-text {
+    font-size: 24px;
+    max-width: 350px;
+    line-height: 30px;
+  }
+  .event-gallery .event-gallery-text {
+    max-width: 100%;
+    padding: 40px 40px 0;
+  }
+  .our-programs .program-swiper .swiper-slide img {
+    height: 240px;
+  }
+  .our-programs .program-swiper.home-swiper .swiper-arrows-wrapper {
+    top: 120px;
+  }
+  .our-programs .programs-text,
+  .our-programs .our-programs-obstacle {
+    padding-inline: 40px;
+  }
+  .our-programs .program-swiper.home-swiper .our-programs-obstacle {
+    padding-inline: 0;
+  }
+  .coaching .coaching-grid {
+    margin: 40px auto 0;
+  }
+  .hero.event-hero .hero-img .img-item {
+    width: 230px;
+    height: 350px;
+  }
+  .hero.event-hero .hero-img .img-item:nth-child(2) {
+    width: 230px;
+    height: 350px;
+    margin-top: 65px;
+  }
+  .hero.event-hero .hero-img {
+    gap: 10px;
+  }
+  .hero.event-hero {
+    margin-top: 0px;
+  }
+  .modal .modal-dialog .modal-body {
+    padding: 40px;
+  }
+  .modal .modal-dialog .modal-header .modal-title {
+    font-size: 24px;
+  }
+  .header .navbar .navbar-brand img {
+    max-width: 160px;
+  }
+  .header .navbar .navbar-toggler svg {
+    width: 30px;
+    height: 30px;
+  }
+  .header .navbar .navbar-toggler .menu-close {
+    width: 20px;
+    height: 20px;
+  }
+  .desire-results .desire-results-inner .btn {
+    min-width: 50px;
+    font-size: 24px;
+    line-height: 70px;
+  }
+  .book-consultation .theme-tabs {
+    margin-top: 50px;
+  }
+  .game-motive .game-motive-content,
+  .game-experience .game-experience-content {
+    padding: 25px 10px 0;
+  }
+  .game-experience .game-experience-infographic {
+    height: 300px;
+    object-fit: cover;
+  }
+  .coaching.seasoned-athlete.bia-girls-athlete .page-title {
+    max-width: 360px;
+  }
+  .best-program .page-title {
+    padding-inline: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .page-title,
+  .our-programs .programs-text .page-title,
+  .our-programs .our-programs-obstacle .page-title,
+  .hero.program-hero.hero-bottom .hero-wrapper .page-title,
+  .coaching.seasoned-athlete .page-title,
+  .coaching.real-change .page-title {
+    font-size: 26px !important;
+    line-height: 32px !important;
+  }
+  .schedule .page-title {
+    font-size: 30px !important;
+  }
+  .coaching.seasoned-athlete .page-title {
+    font-size: 24px !important;
+  }
+  .hero .hero-wrapper .page-title,
+  .hero.story-hero .hero-wrapper .page-title {
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+  .lets-chat,
+  .program-cta,
+  .program-video,
+  .home-program-swiper,
+  .coaching,
+  .resources {
+    padding: 50px 0;
+  }
+  .lets-chat .lets-chat-inner h2 {
+    font-size: 40px;
+    line-height: 32px;
+  }
+  .lets-chat .lets-chat-inner p:first-child {
+    margin-bottom: 20px !important;
+  }
+  .lets-chat .lets-chat-inner {
+    gap: 25px;
+  }
+  .lets-chat .lets-chat-inner .btn {
+    margin-top: 20px;
+  }
+  .program-cta p {
+    margin-bottom: 30px;
+  }
+  .coaching .page-title {
+    max-width: 250px;
+    margin-inline: auto !important;
+  }
+  .lets-chat .lets-chat-inner .btn,
+  .theme-form .btn,
+  .program-cta .btn,
+  .programs-listing-content .btn,
+  .desire-results .desire-results-inner .btn,
+  .book-consultation .theme-tabs .tab-content .btn,
+  .schedule .btn,
+  .seasoned-athlete.prefered-program .btn,
+  .resource-program .btn,
+  .retreat-detail .btn,
+  .packages .package-detail .btn,
+  .faqs .accordion .accordion-item .accordion-body .btn,
+  .program-kinds .program-kinds-content .btn,
+  .champion .champion-text.champion-last .champion-cta .btn,
+  .game-experience.obstacle-game .game-experience-content .btn,
+  .membership-tabs .tab-pane .member-plan .btn-outline-primary,
+  .our-programs.community-event .our-programs-obstacle .btn,
+  .hero.event-hero .hero-wrapper .hero-content .btn {
+    font-size: 18px;
+    height: inherit;
+    min-width: 150px;
+    line-height: 50px;
+  }
+  .faqs .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 20px !important;
+  }
+  .faqs .accordion .accordion-item .accordion-header .accordion-button::after {
+    margin-top: 4px;
+  }
+  .faqs .accordion .accordion-item .accordion-body {
+    padding: 20px 0 50px;
+  }
+  .our-programs .programs-text .page-title {
+    font-size: 30px;
+  }
+  .our-programs .our-programs-obstacle .page-title {
+    font-size: 22px;
+    line-height: 40px !important;
+  }
+  .champion {
+    overflow: hidden;
+  }
+  .champion .champion-gallery {
+    padding: 15% 0 10%;
+    margin: 0 -12% !important;
+  }
+  p,
+  ul,
+  .retreat-tagline .tagline,
+  .home-program-swiper .swiper-slide .home-program-content,
+  .team-work .team-work-content,
+  .cta-programs .cta-programs-text .cta-desc,
+  .book-consultation .theme-tabs .tab-content .tab-title span,
+  .packages .package-detail h5,
+  .membership-tabs .tab-pane .obstacle-program-text {
+    font-size: 18px !important;
+    line-height: 25px !important;
+  }
+  .retreat-tagline .tagline {
+    margin: 30px auto;
+  }
+  .join-team .join-team-wrapper h3 {
+    font-size: 20px;
+  }
+  .faqs .accordion .accordion-item .accordion-body p,
+  .faqs .accordion .accordion-item .accordion-body ul,
+  .story-hero.hero .hero-wrapper .hero-content p,
+  .retreat-grid .retreat-grid-content h3,
+  .game-motive .game-motive-content h3 {
+    margin-bottom: 20px !important;
+  }
+  .story-hero.hero .story-img {
+    height: 350px;
+  }
+  .theme-form .form-wrapper label {
+    font-size: 18px;
+    line-height: 45px;
+  }
+  .members-swiper-wrapper {
+    margin-top: 50px;
+  }
+  .theme-form .form-wrapper select.form-control {
+    background-size: 20px !important;
+  }
+  .our-clients .client-video {
+    width: 265px;
+    height: 350px;
+  }
+  .cta-programs .cta-programs-text .btn,
+  .hero .hero-wrapper .hero-content .btn,
+  .our-programs .our-programs-obstacle .btn {
+    font-size: 18px;
+    margin-top: 30px;
+    min-width: 250px;
+    line-height: 50px;
+  }
+  .our-programs .our-programs-obstacle .btn {
+    min-width: 180px;
+  }
+  .newsletter .newsletter-form .form-wrapper .form-control {
+    height: 50px;
+    font-size: 18px;
+  }
+  .newsletter-form .btn,
+  .join-team .join-team-wrapper .join-team-content .btn,
+  .upcoming-retreat-wrapper .btn {
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 50px;
+  }
+  .footer .footer-links li a {
+    font-size: 18px;
+  }
+  .footer .copyright .copyright-text p {
+    font-size: 14px;
+  }
+  .client-swiper .swiper-pagination {
+    bottom: -5px;
+    font-size: 18px;
+    font-family: "Neue Plak SemiBold";
+  }
+  .swiper-arrows-wrapper .swiper-arrows {
+    width: 20px;
+  }
+  .retreat-inforgraphic {
+    margin-top: 40px;
+  }
+  .retreat-quote .quote-title,
+  .retreat-grid .retreat-grid-content h3,
+  .programs-listing .programs-listing-content h3,
+  .game-motive .game-motive-content h3,
+  .program-listing .program-listing-text h3,
+  .schedule .timings-outer .timings h3,
+  .seasoned-athlete.prefered-program h3 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .retreat-grid .row .retreat-grid-img img,
+  .hero.hero-home-program .hero-home-program-img,
+  .game-motive .game-motive-inforgrphic,
+  .hero.hero-program .hero-program-img,
+  .seasoned-athlete .seasoned-athlete-img {
+    height: 270px;
+  }
+  .coaching.support-story .page-title {
+    text-align: center;
+  }
+  .coaching.support-story .page-title span {
+    padding-right: 30px;
+  }
+  .coaching.coaching-home-program .page-title {
+    max-width: 350px;
+  }
+  .game-motive .coaching .page-title,
+  .what-we-offer .headline,
+  .coaching.real-change
+    .our-clients
+    .members-swiper
+    .swiper-slide
+    .client-text
+    h2,
+  .best-program .faqs h4 {
+    max-width: 380px;
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+  .game-motive .coaching .page-title span:nth-of-type(1) {
+    padding-right: 50px;
+  }
+  .what-we-offer .offer-listing .offer-title,
+  .what-we-offer .offer-listing {
+    gap: 15px;
+  }
+  .offer-listing .offer-title .count,
+  .game-experience.obstacle-game .game-experience-steps .steps .count {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .offer-listing .offer-title .tagline {
+    font-size: 28px;
+    line-height: 44px;
+  }
+  .desire-results .desire-results-inner .desire-results-img {
+    height: 450px;
+  }
+  .program-listing .program-listing-text h3 {
+    margin-bottom: 5px;
+  }
+  .book-consultation .theme-tabs .tab-content .tab-title {
+    font-size: 50px;
+    margin-top: 10px;
+    line-height: 30px;
+  }
+  .book-consultation .theme-tabs .tab-content .tab-duration {
+    margin: 20px 0 0;
+  }
+  .retreat-detail .retreat-detail-gallery img:nth-child(1) {
+    height: 185px;
+  }
+  .retreat-detail .retreat-detail-gallery img:nth-child(2) {
+    height: 210px;
+  }
+  .packages .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 26px;
+  }
+  .diverse-programs .theme-tabs .theme-navtabs li a {
+    font-size: 10px;
+    padding: 0 10px;
+  }
+  .program-kinds .page-title {
+    margin-bottom: 30px;
+  }
+  .program-kinds .program-kinds-content .hoverable-list {
+    margin: 30px 0 20px;
+    font-size: 32px !important;
+    line-height: 57px !important;
+  }
+  .program-kinds .program-kinds-preview {
+    width: 205px;
+    height: 355px;
+  }
+  .hero.program-hero.hero-bottom .program-img {
+    height: 300px;
+  }
+  .membership-benefits .benefits-listing img {
+    width: 230px;
+    height: 240px;
+  }
+  .membership-benefits .benefits-listing:nth-child(odd) {
+    gap: 0;
+  }
+  .game-experience.obstacle-game .game-experience-infographic,
+  .hero.obstacle-hero .obstacle-img {
+    height: 260px;
+  }
+  .membership-tabs .nav-tabs .nav-link {
+    font-size: 10px;
+  }
+  .membership-tabs .tab-pane .member-plan .plan-detail img {
+    margin-top: 7px;
+    flex-shrink: 0;
+  }
+  .event-gallery.event-obstacle .event-gallery-text {
+    max-width: 250px;
+  }
+  .event-gallery .event-gallery-text {
+    padding: 50px 30px 0 30px;
+  }
+  .hero.event-hero .hero-img .img-item {
+    width: 194px;
+    height: 259px;
+  }
+  .hero.event-hero .hero-img .img-item:nth-child(2) {
+    width: 187px;
+    height: 250px;
+  }
+  .theme-tabs .theme-navtabs li a,
+  .theme-tabs .theme-navtabs .nav-link {
+    font-size: 12px;
+  }
+  .hero.hero-program.warrior-strong-program .hero-wrapper {
+    margin: 0 20px;
+  }
+  .hero.hero-program.warrior-strong-program .hero-wrapper .hero-content {
+    padding: 10px 20px 0;
+  }
+  .book-consultation .theme-tabs .theme-navtabs .nav-link {
+    font-size: 20px;
+    padding: 2px 20px;
+    text-transform: lowercase;
+  }
+  .membership-tabs .tab-pane .member-plan {
+    padding: 25px;
+  }
+  .coaching.seasoned-athlete.bia-mama-coaching .page-title {
+    font-size: 20px !important;
+  }
+  .membership-tabs .tab-pane .member-plan .plan-title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .membership-tabs .tab-pane .member-plan .plan-price {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .membership-tabs .tab-pane .member-plan .plan-price .price-symbol {
+    line-height: 50px;
+  }
+  .membership-tabs .tab-pane .member-plan .plan-price .price {
+    font-size: 36px;
+    line-height: 60px;
+    padding-left: 36px;
+  }
+  .membership-tabs .tab-pane .member-plan .btn-outline-primary {
+    font-size: 16px;
+    line-height: 40px;
+    margin: 10px 0 20px;
+  }
+  .membership-tabs .tab-pane .member-plan .plan-detail {
+    font-size: 16px !important;
+  }
+  .membership-tabs .tab-pane .member-plan .best-value {
+    top: -18px;
+    font-size: 20px;
+    min-width: 160px;
+    line-height: 36px;
+  }
+  .coaching.membership-tabs {
+    padding: 0;
+  }
+  .coaching.seasoned-athlete.bia-girls-athlete .page-title {
+    max-width: 280px;
+  }
+}
+@media (max-width: 480px) {
+  .desire-results .desire-results-inner .btn {
+    font-size: 12px;
+    line-height: 40px;
+    padding-inline: 20px;
+  }
+  .event-gallery.event-obstacle .page-title {
+    font-size: 22px !important;
+  }
+  .champion .champion-text.champion-last .champion-cta {
+    flex-wrap: wrap;
+  }
+  .champion .champion-text.champion-last .champion-cta .btn {
+    min-width: 200px;
+  }
+  .champion
+    .champion-text.champion-last
+    .champion-cta
+    .btn.btn-outline-primary {
+    line-height: 46px;
+  }
+  .coaching.seasoned-athlete .page-title {
+    max-width: 320px;
+  }
+  .coaching.seasoned-athlete .page-title span:nth-of-type(1) {
+    padding-right: 50px;
+  }
+  .coaching.seasoned-athlete .page-title span:nth-of-type(2) {
+    padding-right: 70px;
+  }
+  .coaching.seasoned-athlete.bia-mama-coaching .page-title {
+    max-width: 100%;
+    text-align: center;
+  }
+  .coaching.seasoned-athlete.bia-mama-coaching .page-title span:nth-of-type(1) {
+    padding-right: 40px;
+  }
+  .coaching.seasoned-athlete.bia-mama-coaching .page-title span:nth-of-type(2) {
+    padding-right: 50px;
+  }
+}
+
+.modal-dialog-scrollable .modal-body {
+  -ms-overflow-style: none; /* For Internet Explorer */
+  scrollbar-width: none; /* For Firefox */
+}
+
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar {
+  display: none; /* For Chrome, Edge, and Safari */
+}
+/* .modal-dialog-scrollable .modal-content {
+  overflow: auto;
+} */
+
+@media screen and (max-width: 395px) {
+  .membership-tabs .nav-tabs .nav-link {
+    padding: 0 5px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .membership-tabs .nav-tabs .nav-link {
+    padding: 0 2px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .membership-tabs .nav-tabs .nav-link {
+    padding: 0 0px;
+  }
+}
+
+#successMsg {
+  /* text-align: center; */
+  margin-top: 20px;
+}
+
+#sSuccessMsg,
+.successMsgcontact {
+  text-align: center;
+  margin-top: 20px;
+}

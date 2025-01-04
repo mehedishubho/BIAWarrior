@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Neue Plak Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Neue Plak Regular"),
+    url("../fonts/NeuePlakRegular.woff") format("woff");
+  ascent-override: 102%;
+}
+@font-face {
+  font-family: "Neue Plak SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Neue Plak SemiBold"),
+    url("../fonts/NeuePlakSemiBold.woff") format("woff");
+  ascent-override: 102%;
+}
+@font-face {
+  font-family: "Neue Plak Extended Extra Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Neue Plak Extended Extra Black"),
+    url("../fonts/NeuePlakExtendedExtraBlack.woff") format("woff");
+}
